@@ -102,3 +102,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxPlayers: 1
+  playerInputManager: {fileID: 0}
+  SceneChangeName: SampleScene

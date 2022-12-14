@@ -11,7 +11,8 @@
                     "id": "822c120e-aa06-476b-8b24-3f46fb2e2cc6",
                     "expectedControlType": "",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Select",
@@ -19,7 +20,8 @@
                     "id": "4eb5ce68-1e6e-4023-af30-4f54a99c111b",
                     "expectedControlType": "",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -97,6 +99,34 @@
                     "processors": "",
                     "groups": "",
                     "action": "Select",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "New action map",
+            "id": "09ee612a-b5bc-432c-bbb1-7da1e36b92c8",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "a840ca7b-18b0-43b5-a79d-b5557cf6c5fc",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "adcb780e-864f-4e50-9922-a7c1bf88cecf",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

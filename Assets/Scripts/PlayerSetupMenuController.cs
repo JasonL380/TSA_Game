@@ -17,7 +17,7 @@ public class PlayerSetupMenuController : MonoBehaviour
     [SerializeField]
     private Button readyButton;
 
-    private float ignoreInputTime = 1.5f;
+    private float ignoreInputTime = 0.5f;
     private bool inputEnabled;
     public void setPlayerIndex(int pi)
     {
@@ -29,7 +29,7 @@ public class PlayerSetupMenuController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame

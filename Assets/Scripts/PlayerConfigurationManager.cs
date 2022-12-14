@@ -13,6 +13,8 @@ public class PlayerConfigurationManager : MonoBehaviour
 
     public PlayerInputManager playerInputManager;
     static public bool GameStarted = false;
+
+    public string SceneChangeName;
     
 
     public static PlayerConfigurationManager Instance { get; private set; }
@@ -58,7 +60,7 @@ public class PlayerConfigurationManager : MonoBehaviour
         playerConfigs[index].isReady = true;
         if (playerConfigs.Count == MaxPlayers && playerConfigs.All(p => p.isReady == true))
         {
-            SceneManager.LoadScene("SampleScene");
+            SceneManager.LoadScene(SceneChangeName);
            //playerInputManager.splitScreen = true;
           //  GameStarted = true;
            /*for(int i = 0; i < index; i++)
