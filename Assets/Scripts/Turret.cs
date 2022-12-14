@@ -1,6 +1,6 @@
 // Name: Jason Leech
 // Date: 12/14/2022
-// Desc:
+// Desc: T
 
 using System;
 using System.Numerics;
@@ -25,8 +25,8 @@ public class Turret : MonoBehaviour
     [Tooltip("The range of this turret")] 
     public float range;
 
-    public GameObject currentTarget;
-    public float currentFireTime;
+    private GameObject currentTarget;
+    private float currentFireTime;
 
     private void Start()
     {
@@ -53,8 +53,8 @@ public class Turret : MonoBehaviour
                 }
                 else
                 {
-                    
-                    Quaternion angle = Quaternion.Euler(0, 0, Mathf.Atan2(toTarget.y, toTarget.x));
+                    fireEvent.Invoke();
+                    Quaternion angle = Quaternion.Euler(0, 0, Mathf.Rad2Deg * Mathf.Atan2(toTarget.y, toTarget.x));
                     //rotate towards the target
                     transform.rotation = angle;
                     
