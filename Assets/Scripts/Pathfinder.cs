@@ -51,19 +51,39 @@ public class Pathfinder : MonoBehaviour
     private Vector2Int graphDimensions = new Vector2Int();
 
     private float lastDensity;
+    public GameObject graphManager;
+
+    private PathfinderGraphManager graphManagerScript;
+    private bool hasManager = false;
 
     private void Start()
     {
         myRB2D = GetComponent<Rigidbody2D>();
         myCirc = GetComponent<CircleCollider2D>();
         //target = waypoints[0];
-        generateGraph();
-        //print(graph[graphDimensions.x/2,graphDimensions.y/2]);
+        
+        if (graphManager != null)
+        {
+            graphManagerScript = graphManager.GetComponent<PathfinderGraphManager>();
+            if (graphManagerScript != null)
+            {
+                hasManager = true;
+                //get all relevant values from the manager
+                gridStart = graphManagerScript.gridStart;
+                gridSize = graphManagerScript.gridSize;
+                graphDimensions = graphManagerScript.graphDimensions;
+                boxSize = graphManagerScript.boxSize;
+                boxCenter = graphManagerScript.boxCenter;
+            }
+        }
+
+        if (!hasManager)
+        {
+            generateGraph();
+        }
+        
         pathfindingWaypoints = a_star_search(actualToGrid(transform.position),
            actualToGrid(waypoints[currentPathWaypoint]));
-        print(gridToActual(graphDimensions));
-        print(actualToGrid(transform.position));
-        print(gridToActual(actualToGrid(transform.position)));
     }
 
     void generateGraph()
@@ -176,7 +196,16 @@ public class Pathfinder : MonoBehaviour
             }
 
             //print("Visiting " + current);
-            int currentPoint = graph[current.x, current.y];
+            int currentPoint;
+            if (hasManager)
+            {
+                currentPoint = graphManagerScript.graph[current.x, current.y];
+            }
+            else
+            {
+                currentPoint = graph[current.x, current.y];
+            }
+            
             for (int i = 1; i <= 4; ++i)
             {
                 if ((currentPoint & (1 << i)) != 0)
