@@ -14,7 +14,15 @@ public class TurretGrid : MonoBehaviour
     private Dictionary<Vector2, GameObject> _turretMap = new Dictionary<Vector2, GameObject>();
     [Tooltip("The layers that cannot be placed on, for example walls.")]
     public LayerMask obstacleLayerMask;
-    
+
+    //public Vector2 pos;
+    //public GameObject turretPrefab;
+
+    private void Start()
+    {
+        //print(PlaceObjectAtPosition(turretPrefab, pos, 0));
+    }
+
     private void FixedUpdate()
     {
         DrawSquare(GetGridPosition(transform.position), Color.red, 120);
@@ -68,7 +76,7 @@ public class TurretGrid : MonoBehaviour
         Vector2 gridPos = GetGridPosition(position);
         
         //check if there is already a turret at this position
-        if (_turretMap[gridPos] != null)
+        if (_turretMap.ContainsKey(gridPos))
         {
             return false;
         }
@@ -95,12 +103,11 @@ public class TurretGrid : MonoBehaviour
     public bool DestroyObjectAtPosition(Vector2 position)
     {
         Vector2 gridPos = GetGridPosition(position);
-
-        GameObject turret = _turretMap[gridPos];
+        
         //check if a turret exists at this position
-        if (turret != null)
+        if (_turretMap.ContainsKey(gridPos))
         {
-            Destroy(turret);
+            Destroy(_turretMap[gridPos]);
             _turretMap.Remove(gridPos);
             
             return true;
