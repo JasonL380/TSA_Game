@@ -11,7 +11,6 @@ public class CursorMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
@@ -22,11 +21,8 @@ public class CursorMovement : MonoBehaviour
 
    public void OnCursor(InputAction.CallbackContext value)
     {
-        if ()
-        {
-            positionValue.x = value.ReadValue<Vector2>().x / Screen.currentResolution.width;
-            positionValue.y = value.ReadValue<Vector2>().y / Screen.currentResolution.height;
-        }
+
+        positionValue = value.ReadValue<Vector2>();
     }
 
     void OnClick()
