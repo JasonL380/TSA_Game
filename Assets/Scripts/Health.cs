@@ -35,8 +35,8 @@ public class Health : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        HealthBarSlider.value = currentHealth; //sets health bar slider to the current health always
-        HealthBarSlider.maxValue = maxHealth;
+      //  HealthBarSlider.value = currentHealth; //sets health bar slider to the current health always
+      //  HealthBarSlider.maxValue = maxHealth;
 
     }
     public void takeDamage(int damage) //deals damage based on getting a collision from a bullet
