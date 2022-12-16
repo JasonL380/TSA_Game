@@ -101,6 +101,7 @@ public class TurretGrid : MonoBehaviour
         if (turret != null)
         {
             Destroy(turret);
+            _turretMap.Remove(gridPos);
             
             return true;
         }
