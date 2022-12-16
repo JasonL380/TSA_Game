@@ -14,9 +14,8 @@ GameObject:
   - component: {fileID: 3816100392821173082}
   - component: {fileID: 8403391876375128524}
   - component: {fileID: 3936394250081713675}
-  - component: {fileID: -2750398899643242660}
   m_Layer: 6
-  m_Name: SplitterEnemy
+  m_Name: WeakSplitterEnemy 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -79,7 +78,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.6509434, g: 0.27880028, b: 0.27880028, a: 1}
+  m_Color: {r: 0.7735849, g: 0.35322177, b: 0.35322177, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -161,24 +160,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f6f47fa9bb349d448b1165b777daee3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 7
-  maxHealth: 7
+  currentHealth: 6
+  maxHealth: 6
   destroyAtZero: 1
   HealthBarSlider: {fileID: 0}
   damageTaken: 0
   PlayerSpawns: []
   manager: {fileID: 0}
   playerNum: 0
---- !u!114 &-2750398899643242660
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 566563747614171943}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fdd24c55ef2bfe748abe1b68bcdfe64b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  splitChild: {fileID: 566563747614171943, guid: e37762821fd85274a8fdc627e74caa8d, type: 3}
