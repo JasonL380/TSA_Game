@@ -598,7 +598,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53c1a92940831ba4f9c4ba1a3f98a747, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: PlayerSetUp
+  sceneName: PlayerSetup
   GameName: LoseScene
   VolumeSlider: {fileID: 0}
   AudioMixer: {fileID: 0}

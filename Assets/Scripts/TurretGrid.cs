@@ -30,7 +30,7 @@ public class TurretGrid : MonoBehaviour
         return _turretMap[GetGridPosition(position)];
     }
 
-    private Vector2 GetGridPosition(Vector2 position)
+    public Vector2 GetGridPosition(Vector2 position)
     {
         Vector2 gridPosition = new Vector2();
         //check if x is negative to determine how the position should be rounded
