@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8403391876375128524}
   - component: {fileID: 3936394250081713675}
   m_Layer: 6
-  m_Name: BasicEnemy
+  m_Name: SplitterEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -78,7 +78,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.6509434, g: 0.27880028, b: 0.27880028, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -137,7 +137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fd67679029647d19bd3dc54648a5d41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 8
   waypoints:
   - {x: -16, y: -14.5}
   wallLayers:
@@ -147,6 +147,7 @@ MonoBehaviour:
   boxCenter: {x: -15, y: 0}
   boxSize: {x: 28, y: 31}
   nodeDensity: 1
+  graphManager: {fileID: 0}
 --- !u!114 &3936394250081713675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -159,8 +160,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f6f47fa9bb349d448b1165b777daee3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 5
-  maxHealth: 5
+  currentHealth: 6
+  maxHealth: 6
   destroyAtZero: 1
   HealthBarSlider: {fileID: 0}
   damageTaken: 0
