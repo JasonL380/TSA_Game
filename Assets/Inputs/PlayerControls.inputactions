@@ -2,6 +2,34 @@
     "name": "PlayerControls",
     "maps": [
         {
+            "name": "New action map",
+            "id": "09ee612a-b5bc-432c-bbb1-7da1e36b92c8",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "a840ca7b-18b0-43b5-a79d-b5557cf6c5fc",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "adcb780e-864f-4e50-9922-a7c1bf88cecf",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
             "name": "ingame",
             "id": "632ea397-26e1-4f54-aae9-008a8afed3a2",
             "actions": [
@@ -16,17 +44,8 @@
                 },
                 {
                     "name": "Cursor",
-                    "type": "Value",
+                    "type": "PassThrough",
                     "id": "e33fc145-aa5e-4736-8983-ff0de6c85401",
-                    "expectedControlType": "Vector2",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": true
-                },
-                {
-                    "name": "GamePadCursor",
-                    "type": "Value",
-                    "id": "c4e46851-972f-4b38-b022-4a34b8e13a3b",
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
@@ -47,8 +66,8 @@
                 },
                 {
                     "name": "",
-                    "id": "7f56bca8-e684-4b5f-87ab-92bb4b35f9f3",
-                    "path": "<Mouse>/position",
+                    "id": "06770c03-ab02-405b-b8bc-60a34ef648c6",
+                    "path": "<XInputController>/leftStick",
                     "interactions": "",
                     "processors": "",
                     "groups": "playing",
@@ -58,12 +77,12 @@
                 },
                 {
                     "name": "",
-                    "id": "06770c03-ab02-405b-b8bc-60a34ef648c6",
-                    "path": "<Gamepad>/leftStick",
+                    "id": "7f56bca8-e684-4b5f-87ab-92bb4b35f9f3",
+                    "path": "<Mouse>/delta",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
-                    "action": "GamePadCursor",
+                    "groups": "playing",
+                    "action": "Cursor",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -73,8 +92,19 @@
                     "path": "<Joystick>/stick",
                     "interactions": "",
                     "processors": "",
+                    "groups": "playing",
+                    "action": "Cursor",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fe4b6af2-9368-451f-b4e5-68cd16ed824d",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
                     "groups": "",
-                    "action": "GamePadCursor",
+                    "action": "Cursor",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
