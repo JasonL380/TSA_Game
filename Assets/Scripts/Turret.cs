@@ -39,7 +39,7 @@ public class Turret : MonoBehaviour
         //print(Time.deltaTime + ", " + currentFireTime);
         if (currentFireTime <= 0)
         {
-            print("firing");
+            //print("firing");
             currentFireTime = fireRate;
             if (currentTarget != null)
             {
