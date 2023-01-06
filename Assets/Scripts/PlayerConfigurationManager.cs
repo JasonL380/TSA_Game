@@ -52,7 +52,7 @@ public class PlayerConfigurationManager : MonoBehaviour
 
     public void SetPlayerColor(int index, Material color)
     {
-        playerConfigs[index].playerMaterial = color;
+       // playerConfigs[index].playerMaterial = color;
     }
 
     public void ReadyPlayer(int index)
@@ -83,5 +83,5 @@ public class PlayerConfiguration : MonoBehaviour
     [SerializeField]
     public int PlayerIndex { get; set; }
     public bool isReady { get; set; }
-    public Material playerMaterial { get; set; }
+    //public Material playerMaterial { get; set; }
 }

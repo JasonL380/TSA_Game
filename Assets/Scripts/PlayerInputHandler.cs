@@ -10,7 +10,7 @@ public class PlayerInputHandler : MonoBehaviour
     private PlayerConfiguration playerConfig;
 
     [SerializeField]
-    private SpriteRenderer playerMesh;
+    //private SpriteRenderer playerMesh;
 
     private PlayerControls controls;
 

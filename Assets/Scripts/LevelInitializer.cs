@@ -20,8 +20,6 @@ public class LevelInitializer : MonoBehaviour
             var player = Instantiate(playerPrefab, PlayerSpawns[i].position, PlayerSpawns[i].rotation, gameObject.transform);
             player.GetComponent<PlayerInputHandler>().InitializePlayer(playerConfigs[i]);
             PlayerNum++;
-            Health playerinput = player.GetComponent<Health>();
-            playerinput.playerNum = PlayerNum;
         }
         
     }

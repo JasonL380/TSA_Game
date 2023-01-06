@@ -102,7 +102,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -122,7 +122,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066159047676247}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -253,7 +253,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -273,7 +273,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066159057958801}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -332,10 +332,9 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.05959578, y: 0.45644408, z: 0.28527755}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 7119066160416713643}
+  m_Children: []
   m_Father: {fileID: 7119066159801519348}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -404,7 +403,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -526,7 +525,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -546,7 +545,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066159075528537}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -677,7 +676,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -697,7 +696,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066159078775524}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -828,7 +827,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -848,7 +847,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066159106506555}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -979,7 +978,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -999,7 +998,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066159111909182}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -1045,7 +1044,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7119066159116426143
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1061,10 +1060,8 @@ RectTransform:
   - {fileID: 7119066159826529961}
   - {fileID: 7119066160877684403}
   - {fileID: 7119066160016330211}
-  - {fileID: 7119066160309456232}
-  - {fileID: 7119066160357051028}
   m_Father: {fileID: 7119066160708515601}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1211,7 +1208,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -1362,7 +1359,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -1513,7 +1510,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -1533,7 +1530,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066159251110452}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -1664,7 +1661,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -1684,7 +1681,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066159268669397}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -1815,7 +1812,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -1835,7 +1832,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066159290096214}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -1966,7 +1963,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -1986,7 +1983,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066159314360215}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -2117,7 +2114,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -2137,7 +2134,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066159331385165}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -2268,7 +2265,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -2288,7 +2285,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066159342001541}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -2317,141 +2314,6 @@ MonoBehaviour:
   layer:
     serializedVersion: 2
     m_Bits: 1
---- !u!1 &7119066159354060022
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7119066159354060009}
-  - component: {fileID: 7119066159354060011}
-  - component: {fileID: 7119066159354060008}
-  m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &7119066159354060009
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7119066159354060022}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 7119066160200328196}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &7119066159354060011
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7119066159354060022}
-  m_CullTransparentMesh: 1
---- !u!114 &7119066159354060008
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7119066159354060022}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Attack
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &7119066159371544796
 GameObject:
   m_ObjectHideFlags: 0
@@ -2554,7 +2416,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -2574,7 +2436,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066159371544787}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -2705,7 +2567,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -2725,7 +2587,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066159397611382}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -2856,7 +2718,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -2876,7 +2738,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066159410978541}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -3007,7 +2869,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -3027,7 +2889,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066159417594143}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -3158,7 +3020,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -3178,7 +3040,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066159457743101}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -3309,7 +3171,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -3329,7 +3191,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066159466066356}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -3460,7 +3322,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -3611,7 +3473,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -3631,7 +3493,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066159519562947}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -3762,7 +3624,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -3782,7 +3644,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066159563545691}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -3913,7 +3775,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -3933,7 +3795,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066159613066824}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -4064,7 +3926,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -4084,7 +3946,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066159627108238}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -4215,7 +4077,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -4366,7 +4228,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -4386,7 +4248,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066159692196539}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -4517,7 +4379,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -4668,7 +4530,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -4688,7 +4550,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066159708636787}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -4763,7 +4625,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 7119066159692196484}
+  m_FirstSelected: {fileID: 7119066160309456233}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!114 &7119066159710080516
@@ -4832,9 +4694,9 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7119066159735703455}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2020217, y: 0.35484037, z: 0.35484037}
+  m_LocalScale: {x: 1.2020218, y: 0.35484034, z: 0.35484037}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7119066160357051028}
@@ -4842,7 +4704,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -17.3}
+  m_AnchoredPosition: {x: -0.00012207031, y: -17.299988}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7119066159735703440
@@ -4873,7 +4735,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Fast Spawner
+  m_text: Fast Tower
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5044,7 +4906,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -5064,7 +4926,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066159740351115}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -5195,7 +5057,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -5215,7 +5077,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066159789294148}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -5346,7 +5208,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -5366,7 +5228,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066159791476499}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -5497,7 +5359,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -5517,7 +5379,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066159794683280}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -5563,7 +5425,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &7119066159801519348
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5577,10 +5439,13 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7119066160755426309}
-  - {fileID: 7119066160310766309}
   - {fileID: 7119066159066104393}
+  - {fileID: 7119066160416713643}
+  - {fileID: 7119066160310766309}
+  - {fileID: 7119066160309456232}
+  - {fileID: 7119066160357051028}
   m_Father: {fileID: 7119066160708515601}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5727,7 +5592,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -5747,7 +5612,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066159808727797}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -5878,7 +5743,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -5898,7 +5763,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066159817240706}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -6105,7 +5970,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -6256,7 +6121,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -6276,7 +6141,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066159867406716}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -6542,7 +6407,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -6693,7 +6558,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -6713,7 +6578,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066159923274249}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -6844,7 +6709,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -6864,7 +6729,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066159989092681}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -6905,6 +6770,7 @@ GameObject:
   - component: {fileID: 7119066160016330212}
   - component: {fileID: 7119066160016330213}
   - component: {fileID: 7119066160016330210}
+  - component: {fileID: 6396744487478643187}
   m_Layer: 5
   m_Name: DefenseTab
   m_TagString: Untagged
@@ -6995,7 +6861,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -7015,10 +6881,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066159116426140}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 6396744487478643187}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: OpenSettings
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -7027,153 +6893,23 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 7119066159801519349}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
---- !u!1 &7119066160021708077
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7119066160021708076}
-  - component: {fileID: 7119066160021708078}
-  - component: {fileID: 7119066160021708079}
-  m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &7119066160021708076
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7119066160021708077}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 7119066160788631691}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &7119066160021708078
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7119066160021708077}
-  m_CullTransparentMesh: 1
---- !u!114 &7119066160021708079
+--- !u!114 &6396744487478643187
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7119066160021708077}
+  m_GameObject: {fileID: 7119066160016330208}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Script: {fileID: 11500000, guid: 050a3fb0e1e8dba4c95933323686f4b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Defense
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+  isPaused: 0
+  ClosingUI: {fileID: 7119066159116426140}
+  OpeningUI: {fileID: 7119066159801519349}
+  PauseUI: {fileID: 0}
+  pauseFirstButton: {fileID: 7119066160310766306}
 --- !u!1 &7119066160066484744
 GameObject:
   m_ObjectHideFlags: 0
@@ -7276,7 +7012,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -7296,7 +7032,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066160066484751}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -7427,7 +7163,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -7578,7 +7314,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -7598,7 +7334,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066160102155884}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -7729,7 +7465,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -7749,7 +7485,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066160134969335}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -7880,7 +7616,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -7900,7 +7636,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066160153664139}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -8064,128 +7800,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!1 &7119066160200328197
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7119066160200328196}
-  - component: {fileID: 7119066160200328249}
-  - component: {fileID: 7119066160200328198}
-  - component: {fileID: 7119066160200328199}
-  m_Layer: 5
-  m_Name: AttackTab
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &7119066160200328196
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7119066160200328197}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.05959578, y: 0.45644408, z: 0.28527755}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 7119066159354060009}
-  m_Father: {fileID: 7119066160628435325}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -44.591537, y: 40.58618}
-  m_SizeDelta: {x: 160, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &7119066160200328249
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7119066160200328197}
-  m_CullTransparentMesh: 1
---- !u!114 &7119066160200328198
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7119066160200328197}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!114 &7119066160200328199
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7119066160200328197}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 7119066160200328198}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &7119066160229573479
 GameObject:
   m_ObjectHideFlags: 0
@@ -8346,9 +7960,9 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7119066160232860913}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2020217, y: 0.35484037, z: 0.35484037}
+  m_LocalScale: {x: 1.2020218, y: 0.35484034, z: 0.35484037}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7119066160309456232}
@@ -8356,7 +7970,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -17.3}
+  m_AnchoredPosition: {x: 0.000038146973, y: -17.299988}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7119066160232860914
@@ -8387,7 +8001,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Spawner
+  m_text: Basic Tower
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8558,7 +8172,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -8578,7 +8192,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066160252921755}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -8709,7 +8323,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -8729,7 +8343,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066160259173602}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -8785,18 +8399,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7119066160309456233}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.053352423, y: 2.1810253, z: 1.8761507}
+  m_LocalScale: {x: 0.053350717, y: 2.1807714, z: 1.8762487}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7119066160232860912}
-  m_Father: {fileID: 7119066159116426143}
-  m_RootOrder: 3
+  m_Father: {fileID: 7119066159801519348}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -45.11, y: -2}
+  m_AnchoredPosition: {x: -45.108566, y: -1.9998355}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7119066160309456237
@@ -8852,16 +8466,16 @@ MonoBehaviour:
   m_Navigation:
     m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 7119066160877684402}
+    m_SelectOnUp: {fileID: 7119066160310766308}
     m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 7119066160357051031}
-    m_SelectOnRight: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 7119066160357051031}
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -8919,6 +8533,7 @@ GameObject:
   - component: {fileID: 7119066160310766310}
   - component: {fileID: 7119066160310766311}
   - component: {fileID: 7119066160310766308}
+  - component: {fileID: 4574768385780181444}
   m_Layer: 5
   m_Name: AttackTab
   m_TagString: Untagged
@@ -8940,7 +8555,7 @@ RectTransform:
   m_Children:
   - {fileID: 7119066159885883709}
   m_Father: {fileID: 7119066159801519348}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9009,7 +8624,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -9029,22 +8644,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066159116426140}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 7119066159801519349}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 4574768385780181444}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: OpenSettings
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -9053,6 +8656,23 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &4574768385780181444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7119066160310766306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050a3fb0e1e8dba4c95933323686f4b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPaused: 0
+  ClosingUI: {fileID: 7119066159801519349}
+  OpeningUI: {fileID: 7119066159116426140}
+  PauseUI: {fileID: 0}
+  pauseFirstButton: {fileID: 7119066160016330208}
 --- !u!1 &7119066160349569681
 GameObject:
   m_ObjectHideFlags: 0
@@ -9155,7 +8775,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -9175,7 +8795,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066160349569684}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -9230,18 +8850,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7119066160357051029}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.053352423, y: 2.1810253, z: 1.8761507}
+  m_LocalScale: {x: 0.053350717, y: 2.1807714, z: 1.8762487}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7119066159735703454}
-  m_Father: {fileID: 7119066159116426143}
-  m_RootOrder: 4
+  m_Father: {fileID: 7119066159801519348}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -35.14, y: -2}
+  m_AnchoredPosition: {x: -35.138866, y: -1.9998355}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7119066160357051017
@@ -9297,16 +8917,16 @@ MonoBehaviour:
   m_Navigation:
     m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 7119066160016330210}
-    m_SelectOnDown: {fileID: 7119066160309456235}
-    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnUp: {fileID: 7119066159066104392}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 7119066160309456235}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_SelectedColor: {r: 0.4433962, g: 0.4433962, b: 0.4433962, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -9326,82 +8946,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!1 &7119066160382362426
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7119066160382362429}
-  - component: {fileID: 7119066160382362431}
-  - component: {fileID: 7119066160382362428}
-  m_Layer: 5
-  m_Name: blargh (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &7119066160382362429
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7119066160382362426}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.21374243, y: 0.18386441, z: 0.1838644}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 7119066160628435325}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 10.707611, y: -9.3185425}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &7119066160382362431
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7119066160382362426}
-  m_CullTransparentMesh: 1
---- !u!114 &7119066160382362428
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7119066160382362426}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.01886791, g: 0.010979282, b: 0.0006051959, a: 0.4392157}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &7119066160390503461
 GameObject:
   m_ObjectHideFlags: 0
@@ -9588,7 +9132,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -9608,7 +9152,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066160407651069}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -9662,18 +9206,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7119066160416713640}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.05959578, y: 0.45644405, z: 0.28527755}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7119066159066104393}
-  m_RootOrder: 0
+  m_Father: {fileID: 7119066159801519348}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -34.247787, y: 40.5862}
+  m_SizeDelta: {x: 60, y: -70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7119066160416713645
 CanvasRenderer:
@@ -9874,7 +9418,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -9894,7 +9438,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066160426953093}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -10025,7 +9569,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -10045,7 +9589,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066160453356242}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -10176,7 +9720,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -10196,7 +9740,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066160463997295}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -10327,7 +9871,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -10347,7 +9891,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066160471645935}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -10478,7 +10022,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -10498,7 +10042,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066160527782850}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -10629,7 +10173,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -10649,7 +10193,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066160536763989}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -10780,7 +10324,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -10800,7 +10344,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066160598888062}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -10931,7 +10475,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -10951,7 +10495,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066160606230896}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -11082,7 +10626,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -11102,7 +10646,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066160621536812}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -11131,85 +10675,6 @@ MonoBehaviour:
   layer:
     serializedVersion: 2
     m_Bits: 1
---- !u!1 &7119066160628435322
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7119066160628435325}
-  - component: {fileID: 7119066160628435327}
-  - component: {fileID: 7119066160628435324}
-  m_Layer: 5
-  m_Name: WeaponsTab
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &7119066160628435325
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7119066160628435322}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4.3214474, y: 0.5642312, z: 0.90277}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 7119066160382362429}
-  - {fileID: 7119066160200328196}
-  - {fileID: 7119066160788631691}
-  m_Father: {fileID: 7119066160708515601}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -130.7}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &7119066160628435327
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7119066160628435322}
-  m_CullTransparentMesh: 1
---- !u!114 &7119066160628435324
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7119066160628435322}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.8207547, g: 0.5317476, b: 0.15795653, a: 0.4392157}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &7119066160636643398
 GameObject:
   m_ObjectHideFlags: 0
@@ -11312,7 +10777,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -11463,7 +10928,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -11483,7 +10948,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066160657962830}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -11614,7 +11079,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -11634,7 +11099,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066160662552254}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -11765,7 +11230,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -11823,6 +11288,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7119066160703031696}
+  - component: {fileID: 8025991185769852525}
+  - component: {fileID: 2563206290894927102}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -11851,6 +11318,48 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8025991185769852525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7119066160703031697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 7119066160390503462}
+--- !u!114 &2563206290894927102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7119066160703031697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96e95b22fde8ef0489b0533b256975e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7119066160708515613
 GameObject:
   m_ObjectHideFlags: 0
@@ -11883,7 +11392,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7119066161050433470}
-  - {fileID: 7119066160628435325}
   - {fileID: 7119066159116426143}
   - {fileID: 7119066159801519348}
   m_Father: {fileID: 7119066160703031696}
@@ -12057,7 +11565,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -12077,7 +11585,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066160720315088}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -12182,128 +11690,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!1 &7119066160788631688
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7119066160788631691}
-  - component: {fileID: 7119066160788631692}
-  - component: {fileID: 7119066160788631693}
-  - component: {fileID: 7119066160788631690}
-  m_Layer: 5
-  m_Name: DefenseTab
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &7119066160788631691
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7119066160788631688}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.05959578, y: 0.45644408, z: 0.28527755}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 7119066160021708076}
-  m_Father: {fileID: 7119066160628435325}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -34.24778, y: 40.58618}
-  m_SizeDelta: {x: 160, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &7119066160788631692
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7119066160788631688}
-  m_CullTransparentMesh: 1
---- !u!114 &7119066160788631693
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7119066160788631688}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!114 &7119066160788631690
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7119066160788631688}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 7119066160788631693}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &7119066160794204430
 GameObject:
   m_ObjectHideFlags: 0
@@ -12406,7 +11792,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -12426,7 +11812,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066160794204421}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -12605,7 +11991,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -12625,7 +12011,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066160851130243}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -12756,7 +12142,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -12776,7 +12162,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066160856432158}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -12907,7 +12293,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -13029,7 +12415,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -13049,7 +12435,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066160922041358}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -13180,7 +12566,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -13200,7 +12586,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066160931156312}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -13331,7 +12717,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -13351,7 +12737,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066160939928564}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -13482,7 +12868,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -13633,7 +13019,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -13653,7 +13039,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066160982444122}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
@@ -13932,7 +13318,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.4817464, g: 0.58431375, b: 0.11372549, a: 1}
     m_PressedColor: {r: 0.4339623, g: 0.41553935, b: 0.41553935, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_SelectedColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
     m_DisabledColor: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -13952,7 +13338,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7119066160672993312}
+      - m_Target: {fileID: 7119066161068488366}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: towerPurchase
         m_Mode: 1
