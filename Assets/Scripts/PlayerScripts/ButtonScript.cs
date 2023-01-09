@@ -28,6 +28,11 @@ public class ButtonScript : MonoBehaviour
         selectManager = GameObject.FindObjectOfType<SelectManager>();
     }
 
+    void OnClick()
+    {
+        towerPurchase();
+    }
+
     // Update is called once per frame
     void Update()
     {

@@ -130,6 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7119066159989092692, guid: c4b0bf8c9b02ae041afb2e7b1cf382ec, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7119066160703031696, guid: c4b0bf8c9b02ae041afb2e7b1cf382ec, type: 3}
       propertyPath: m_RootOrder
       value: 0
