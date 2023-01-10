@@ -389,6 +389,10 @@ PrefabInstance:
       propertyPath: gridSize.y
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7119066160845911610, guid: c4b0bf8c9b02ae041afb2e7b1cf382ec, type: 3}
+      propertyPath: obstacleLayerMask.m_Bits
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7119066161050433456, guid: c4b0bf8c9b02ae041afb2e7b1cf382ec, type: 3}
       propertyPath: m_CullTransparentMesh
       value: 0

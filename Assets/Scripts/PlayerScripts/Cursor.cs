@@ -43,7 +43,7 @@ namespace Utils.PlayerScripts
             if (selectManager.purchaseState())
             {
                 print("placing tower");
-                turretGrid.PlaceObjectAtPosition(selectManager.purchaseObject(), currentPos, 0);
+                turretGrid.PlaceObjectAtPosition(selectManager.purchaseObject(), transform.position, 0);
             }
         }
 
