@@ -21,6 +21,11 @@ public class SelectManager : MonoBehaviour
         print(purchasedTower);
     }
 
+    public GameObject purchaseObject()
+    {
+        return purchasedTower;
+    }
+    
     public GameObject disablePurchase()
     {
         purchaseEnabled = false;
