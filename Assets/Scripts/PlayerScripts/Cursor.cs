@@ -14,9 +14,6 @@ namespace Utils.PlayerScripts
         private TurretGrid turretGrid;
         public float sensitivity;
         private SelectManager selectManager;
-        
-        
-        //public UnityEvent PlaceTower = new Un
         private void Start()
         {
             turretGrid = GameObject.FindObjectOfType<TurretGrid>();
