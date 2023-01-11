@@ -88,7 +88,7 @@ public class TurretGrid : MonoBehaviour
             return false;
         }
 
-        GameObject turret = Instantiate(prefab, position, Quaternion.identity);
+        GameObject turret = Instantiate(prefab, gridPos, Quaternion.identity);
         turret.layer = layer;
         _turretMap[gridPos] = turret;
         
