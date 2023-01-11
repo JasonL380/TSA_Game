@@ -29,7 +29,7 @@ public class PlayerConfigurationManager : MonoBehaviour
         else
         {
             Instance = this;
-            //DontDestroyOnLoad(Instance);
+            DontDestroyOnLoad(Instance);
             playerConfigs = new List<PlayerConfiguration>();
         }
         
