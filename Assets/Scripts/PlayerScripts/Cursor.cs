@@ -71,7 +71,7 @@ namespace Utils.PlayerScripts
             }
 
             print("click");
-            print(_selectManager.purchaseState());
+            //print(_selectManager.purchaseState());
             if (_selectManager.purchaseState())
             {
                 print("placing tower");
