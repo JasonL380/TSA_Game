@@ -247,6 +247,130 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3879247847925368173, guid: 4790e8c1727dd7a408d61e71baa90a1b, type: 3}
   m_PrefabInstance: {fileID: 613088221}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &676713443
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3879247847925368173, guid: 4790e8c1727dd7a408d61e71baa90a1b, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3879247847925368173, guid: 4790e8c1727dd7a408d61e71baa90a1b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 303.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 3879247847925368173, guid: 4790e8c1727dd7a408d61e71baa90a1b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -14.609011
+      objectReference: {fileID: 0}
+    - target: {fileID: 3879247847925368173, guid: 4790e8c1727dd7a408d61e71baa90a1b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.7375944
+      objectReference: {fileID: 0}
+    - target: {fileID: 3879247847925368173, guid: 4790e8c1727dd7a408d61e71baa90a1b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3879247847925368173, guid: 4790e8c1727dd7a408d61e71baa90a1b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3879247847925368173, guid: 4790e8c1727dd7a408d61e71baa90a1b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3879247847925368173, guid: 4790e8c1727dd7a408d61e71baa90a1b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3879247847925368173, guid: 4790e8c1727dd7a408d61e71baa90a1b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3879247847925368173, guid: 4790e8c1727dd7a408d61e71baa90a1b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3879247847925368173, guid: 4790e8c1727dd7a408d61e71baa90a1b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732717434963787512, guid: 4790e8c1727dd7a408d61e71baa90a1b, type: 3}
+      propertyPath: m_Name
+      value: Player Spawn (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4790e8c1727dd7a408d61e71baa90a1b, type: 3}
+--- !u!4 &676713444 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3879247847925368173, guid: 4790e8c1727dd7a408d61e71baa90a1b, type: 3}
+  m_PrefabInstance: {fileID: 676713443}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1430093890
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3879247847925368173, guid: 4790e8c1727dd7a408d61e71baa90a1b, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3879247847925368173, guid: 4790e8c1727dd7a408d61e71baa90a1b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1581.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3879247847925368173, guid: 4790e8c1727dd7a408d61e71baa90a1b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -14.609011
+      objectReference: {fileID: 0}
+    - target: {fileID: 3879247847925368173, guid: 4790e8c1727dd7a408d61e71baa90a1b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.7375944
+      objectReference: {fileID: 0}
+    - target: {fileID: 3879247847925368173, guid: 4790e8c1727dd7a408d61e71baa90a1b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3879247847925368173, guid: 4790e8c1727dd7a408d61e71baa90a1b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3879247847925368173, guid: 4790e8c1727dd7a408d61e71baa90a1b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3879247847925368173, guid: 4790e8c1727dd7a408d61e71baa90a1b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3879247847925368173, guid: 4790e8c1727dd7a408d61e71baa90a1b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3879247847925368173, guid: 4790e8c1727dd7a408d61e71baa90a1b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3879247847925368173, guid: 4790e8c1727dd7a408d61e71baa90a1b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732717434963787512, guid: 4790e8c1727dd7a408d61e71baa90a1b, type: 3}
+      propertyPath: m_Name
+      value: Player Spawn (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4790e8c1727dd7a408d61e71baa90a1b, type: 3}
+--- !u!4 &1430093891 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3879247847925368173, guid: 4790e8c1727dd7a408d61e71baa90a1b, type: 3}
+  m_PrefabInstance: {fileID: 1430093890}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1653873704
 GameObject:
   m_ObjectHideFlags: 0
@@ -273,13 +397,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1653873704}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 621567455fd1c4ceb811cc8a00b6a1a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_NotificationBehavior: 0
-  m_MaxPlayerCount: 2
+  m_MaxPlayerCount: -1
   m_AllowJoining: 1
   m_JoinBehavior: 0
   m_PlayerJoinedEvent:
@@ -356,5 +480,7 @@ MonoBehaviour:
   PlayerSpawns:
   - {fileID: 613088222}
   - {fileID: 63501624}
+  - {fileID: 1430093891}
+  - {fileID: 676713444}
   playerPrefab: {fileID: 7119066160703031697, guid: c4b0bf8c9b02ae041afb2e7b1cf382ec, type: 3}
   PlayerNum: 0
