@@ -14,7 +14,9 @@ namespace Utils.PlayerScripts
         public Vector2 currentPos;
         public float sensitivity;
         public Material previewMaterial;
-
+        public Bounds borders;
+        
+        
         private Material _defaultMaterial;
         private Sprite _defaultSprite;
         private TurretGrid _turretGrid;
@@ -36,12 +38,18 @@ namespace Utils.PlayerScripts
         {
             UpdatePosition();
         }
+        
+        //public void initialize()
 
         public void OnCursor(InputAction.CallbackContext value)
         {
             Vector2 val = value.ReadValue<Vector2>();
-            currentPos += val * sensitivity;
-            UpdatePosition();
+            if (borders.Contains(currentPos + val * sensitivity))
+            {
+                currentPos += val * sensitivity;
+                UpdatePosition();
+            }
+
         }
 
         public void OnMouse(InputAction.CallbackContext value)
