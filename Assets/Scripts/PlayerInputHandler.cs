@@ -22,7 +22,6 @@ public class PlayerInputHandler : MonoBehaviour
     public void InitializePlayer(PlayerConfiguration config)
     {
         playerConfig = config;
-
     }   
 
 
