@@ -2589,6 +2589,9 @@ MonoBehaviour:
   currentPos: {x: 0, y: 0}
   sensitivity: 0.1
   previewMaterial: {fileID: 2100000, guid: 3e4a87451cd0a230ebd567d1fc9da742, type: 2}
+  borders:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 10, y: 10, z: 0}
 --- !u!114 &5747943011240630066
 MonoBehaviour:
   m_ObjectHideFlags: 0
