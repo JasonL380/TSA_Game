@@ -44,11 +44,12 @@ namespace Utils.PlayerScripts
             UpdatePosition();
         }
 
+        /*
         public void OnMouse(InputAction.CallbackContext value)
         {
             currentPos = Camera.main.ScreenToWorldPoint(value.ReadValue<Vector2>());
             UpdatePosition();
-        }
+        }*/
 
         public void OnClick(InputAction.CallbackContext value)
         {

@@ -67,8 +67,8 @@ MonoBehaviour:
     m_ActionId: 4eb5ce68-1e6e-4023-af30-4f54a99c111b
     m_ActionName: PlayerMovement/Select[/XInputControllerWindows/buttonSouth,/XInputControllerWindows/buttonSouth]
   m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: 272f6d14-89ba-496f-b7ff-215263d3219f
+  m_DefaultControlScheme: Gamepad
+  m_DefaultActionMap: UI
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 8776981499668428407, guid: 86814f8850f7a0b46a951b820f800919, type: 3}
 --- !u!114 &1700027143614640581

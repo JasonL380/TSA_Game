@@ -29,7 +29,7 @@ public class PlayerConfigurationManager : MonoBehaviour
         else
         {
             Instance = this;
-            DontDestroyOnLoad(Instance);
+            //DontDestroyOnLoad(Instance);
             playerConfigs = new List<PlayerConfiguration>();
         }
         
@@ -37,7 +37,7 @@ public class PlayerConfigurationManager : MonoBehaviour
 
     public void HandlePlayerJoin(PlayerInput pi)
     {
-        Debug.Log("player joined " + pi.playerIndex); 
+        Debug.Log("PPlayer joined " + pi.playerIndex); 
         pi.transform.SetParent(transform);
 
         if(!playerConfigs.Any(p => p.PlayerIndex == pi.playerIndex))
@@ -62,12 +62,6 @@ public class PlayerConfigurationManager : MonoBehaviour
         if (playerConfigs.Count == MaxPlayers && playerConfigs.All(p => p.isReady == true))
         {
             SceneManager.LoadScene(SceneChangeName);
-           //playerInputManager.splitScreen = true;
-          //  GameStarted = true;
-           /*for(int i = 0; i < index; i++)
-            {
-                
-            } */
         }
     }
 }
