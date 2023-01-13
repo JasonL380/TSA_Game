@@ -3,6 +3,7 @@
 // Desc: Script for the cursor
 
 using System;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
@@ -16,21 +17,30 @@ namespace Utils.PlayerScripts
         public float sensitivity;
         public Material previewMaterial;
         public Rect borders;
-
+        public int side;
+        public GameObject uiPrefab;
+        
         private Material _defaultMaterial;
         private Sprite _defaultSprite;
         private TurretGrid _turretGrid;
         private SelectManager _selectManager;
         private SpriteRenderer _spriteRenderer;
-        
+
+
         private void Start()
         {
             _turretGrid = (TurretGrid) FindObjectOfType(typeof(TurretGrid));
             _selectManager = FindObjectOfType<SelectManager>();
             _spriteRenderer = GetComponent<SpriteRenderer>();
-            borders = _calculateCameraRect();
             _defaultMaterial = _spriteRenderer.material;
             _defaultSprite = _spriteRenderer.sprite;
+            
+            //determine the borders
+            borders = _calculateCameraRect();
+            //adjust the borders to the selected side
+            SetSide(side);
+            //create the ui in the lower left corner of the screen
+            Instantiate(uiPrefab, borders.min, quaternion.identity);
         }
 
         public void OnCursor(InputAction.CallbackContext value)
@@ -122,7 +132,7 @@ namespace Utils.PlayerScripts
 
         //set which side of the screen this cursor is allowed to be on, 0 for left 1 for right
         //centers the cursor on this side of the screen
-        public void SetSide(int side)
+        private void SetSide(int side)
         {
             //half the width of the rect
             borders.xMax = 0;

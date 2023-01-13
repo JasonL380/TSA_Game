@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.LowLevel;
 
 public class LevelInitializer : MonoBehaviour
 {
@@ -20,6 +22,7 @@ public class LevelInitializer : MonoBehaviour
         {
             var player = Instantiate(playerPrefab, PlayerSpawns[i].position, PlayerSpawns[i].rotation, gameObject.transform);
             player.GetComponent<PlayerInputHandler>().InitializePlayer(playerConfigs[i]);
+            player.GetComponentInChildren<Utils.PlayerScripts.Cursor>().side = i;
             PlayerNum++;
         }
         
