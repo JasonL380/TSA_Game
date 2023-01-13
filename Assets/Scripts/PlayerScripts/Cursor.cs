@@ -12,44 +12,36 @@ namespace Utils.PlayerScripts
     public class Cursor : MonoBehaviour
     {
         public Vector2 currentPos;
+        public Vector2 lastPos;
         public float sensitivity;
         public Material previewMaterial;
-        public Bounds borders;
-        
-        
+        public Rect borders;
+
         private Material _defaultMaterial;
         private Sprite _defaultSprite;
         private TurretGrid _turretGrid;
         private SelectManager _selectManager;
         private SpriteRenderer _spriteRenderer;
         
-        //public UnityEvent PlaceTower = new Un
         private void Start()
         {
-            _turretGrid = GameObject.FindObjectOfType<TurretGrid>();
+            _turretGrid = (TurretGrid) FindObjectOfType(typeof(TurretGrid));
             _selectManager = FindObjectOfType<SelectManager>();
-
             _spriteRenderer = GetComponent<SpriteRenderer>();
+            borders = _calculateCameraRect();
             _defaultMaterial = _spriteRenderer.material;
             _defaultSprite = _spriteRenderer.sprite;
         }
-
-        private void Update()
-        {
-            UpdatePosition();
-        }
-        
-        //public void initialize()
 
         public void OnCursor(InputAction.CallbackContext value)
         {
             Vector2 val = value.ReadValue<Vector2>();
             if (borders.Contains(currentPos + val * sensitivity))
             {
-                currentPos += val * sensitivity;
-                UpdatePosition();
+            lastPos = currentPos;
+            currentPos += val * sensitivity;
+            UpdatePosition();
             }
-
         }
 
         /*
@@ -80,7 +72,6 @@ namespace Utils.PlayerScripts
             }
 
             print("click");
-            //print(_selectManager.purchaseState());
             if (_selectManager.purchaseState())
             {
                 print("placing tower");
@@ -88,12 +79,63 @@ namespace Utils.PlayerScripts
             }
         }
 
+        //secondary click, this will unselect the tower
+        private void OnSecondaryClick(InputAction.CallbackContext value)
+        {
+            
+        }
+        
         private void UpdatePosition()
         {
             Vector2 pos = _turretGrid.GetGridPosition(currentPos);
-            print(pos);
             transform.position = pos;
-            print(transform.position);
+        }
+        
+        //determine the main camera's rect because unity won't do this for me
+        private Rect _calculateCameraRect()
+        {
+            Rect rect = new Rect();
+            Camera cam = Camera.main;
+            if (cam.orthographic)
+            {
+                Vector2 max = new Vector2();
+                max.y = cam.orthographicSize;
+                max.x = cam.aspect * max.y;
+                rect.max = max * 2;
+                rect.center = (Vector2) cam.transform.position;
+            }
+            else
+            {
+                float verticalFov = cam.fieldOfView;
+                float horizontalFov = cam.aspect * verticalFov;
+                print(verticalFov + ", " + horizontalFov);
+                rect.center = cam.transform.position;
+                Vector2 max = new Vector2();
+                max.x = cam.transform.position.z * Mathf.Sin(horizontalFov / 2) + rect.center.x;
+                max.y  = cam.transform.position.z * Mathf.Sin(verticalFov / 2) + rect.center.y;
+                print(max);
+                rect.max = max;
+            }
+            
+            return rect;
+        }
+
+        //set which side of the screen this cursor is allowed to be on, 0 for left 1 for right
+        //centers the cursor on this side of the screen
+        public void SetSide(int side)
+        {
+            //half the width of the rect
+            borders.xMax = 0;
+
+            if (side == 1)
+            {
+                //shift the rect over for the right side
+                borders.x += borders.size.x;
+            }
+            
+            //center the cursor in the new rect
+            currentPos = borders.center;
+            UpdatePosition();
         }
     }
 }
