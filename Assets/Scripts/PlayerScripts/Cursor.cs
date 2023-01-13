@@ -30,7 +30,7 @@ namespace Utils.PlayerScripts
         private void Start()
         {
             _turretGrid = (TurretGrid) FindObjectOfType(typeof(TurretGrid));
-            _selectManager = FindObjectOfType<SelectManager>();
+            _selectManager = GetComponentInParent<SelectManager>();
             _spriteRenderer = GetComponent<SpriteRenderer>();
             _defaultMaterial = _spriteRenderer.material;
             _defaultSprite = _spriteRenderer.sprite;
