@@ -48,9 +48,9 @@ namespace Utils.PlayerScripts
             Vector2 val = value.ReadValue<Vector2>();
             if (borders.Contains(currentPos + val * sensitivity))
             {
-            lastPos = currentPos;
-            currentPos += val * sensitivity;
-            UpdatePosition();
+                lastPos = currentPos;
+                currentPos += val * sensitivity;
+                UpdatePosition();
             }
         }
 

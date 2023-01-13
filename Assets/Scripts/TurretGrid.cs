@@ -1,6 +1,6 @@
 // Name: Jason Leech
 // Date: 12/16/2022
-// Desc: 
+// Desc: Script for the keeping track of the turret grid
 
 using System;
 using System.Collections.Generic;
