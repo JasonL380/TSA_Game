@@ -313,10 +313,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b16c6f78230fa4964a222622d8aae332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 618191923639206552}
+  m_FirstSelected: {fileID: 3802002360091272869}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
-  m_PlayerRoot: {fileID: 6156045822463237025}
+  m_PlayerRoot: {fileID: 3673585497648954350}
 --- !u!114 &6822601638678725445
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1441,7 +1441,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &690809943953495800
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1613,7 +1613,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4470031784687621358
 RectTransform:
   m_ObjectHideFlags: 0
