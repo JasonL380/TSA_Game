@@ -19,7 +19,8 @@ namespace Utils.PlayerScripts
         public Rect borders;
         public int side;
         public GameObject uiPrefab;
-        
+        public Vector2 offset;
+
         private Material _defaultMaterial;
         private Sprite _defaultSprite;
         private TurretGrid _turretGrid;
@@ -40,7 +41,7 @@ namespace Utils.PlayerScripts
             //adjust the borders to the selected side
             SetSide(side);
             //create the ui in the lower left corner of the screen
-            Instantiate(uiPrefab, borders.min, quaternion.identity);
+            Instantiate(uiPrefab, borders.min + offset, quaternion.identity);
         }
 
         public void OnCursor(InputAction.CallbackContext value)
@@ -126,7 +127,11 @@ namespace Utils.PlayerScripts
                 print(max);
                 rect.max = max;
             }
-            
+            rect.x = (int)rect.x;
+            rect.y = (int)rect.y;
+            rect.width = (int)rect.width;
+            rect.height = (int)rect.height;
+
             return rect;
         }
 
