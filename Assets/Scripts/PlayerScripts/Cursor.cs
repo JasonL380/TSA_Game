@@ -42,6 +42,7 @@ namespace Utils.PlayerScripts
             SetSide(side);
             //create the ui in the lower left corner of the screen
             Instantiate(uiPrefab, borders.min + offset, quaternion.identity);
+            borders.Set(borders.x, borders.y, borders.width - 1, borders.height);
         }
 
         public void OnCursor(InputAction.CallbackContext value)
@@ -145,7 +146,7 @@ namespace Utils.PlayerScripts
             if (side == 1)
             {
                 //shift the rect over for the right side
-                borders.x += borders.size.x;
+                borders.x += borders.size.x + 1;
             }
             
             //center the cursor in the new rect
