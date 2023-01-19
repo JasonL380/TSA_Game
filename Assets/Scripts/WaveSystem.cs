@@ -18,6 +18,9 @@ public class WaveSystem : MonoBehaviour
 
     int waveCount = 0;
 
+    private int spawn;
+    private int prevSpawn;
+
     public int timer;
 
     public GameObject BasicEnemy;
@@ -60,11 +63,13 @@ public class WaveSystem : MonoBehaviour
 
     void WaveOneA()
     {
-        Instantiate(BasicEnemy, player1SpawnPoints[0], Quaternion.identity);
-        Instantiate(BasicEnemy, player1SpawnPoints[3], Quaternion.identity);
+        randNum();
+        Instantiate(BasicEnemy, player1SpawnPoints[spawn], Quaternion.identity);
+        Instantiate(BasicEnemy, player2SpawnPoints[spawn], Quaternion.identity);
 
-        Instantiate(BasicEnemy, player2SpawnPoints[0], Quaternion.identity);
-        Instantiate(BasicEnemy, player2SpawnPoints[3], Quaternion.identity);
+        randNum();
+        Instantiate(BasicEnemy, player1SpawnPoints[spawn], Quaternion.identity);
+        Instantiate(BasicEnemy, player2SpawnPoints[spawn], Quaternion.identity);
     }
     void WaveOneB()
     {
@@ -171,5 +176,16 @@ public class WaveSystem : MonoBehaviour
         Instantiate(DuplicateEnemy, player2SpawnPoints[2], Quaternion.identity);
         Instantiate(TankEnemy, player2SpawnPoints[3], Quaternion.identity);
         Instantiate(FastEnemy, player2SpawnPoints[0], Quaternion.identity);
+    }
+
+    void randNum()
+    {
+        int r = (int)(Random.value * player1SpawnPoints.Length);
+        while(r == prevSpawn)
+        {
+            r = (int)(Random.value * player1SpawnPoints.Length);
+        }
+        spawn = r;
+        prevSpawn = spawn;
     }
 }
