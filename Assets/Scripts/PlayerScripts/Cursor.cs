@@ -20,6 +20,8 @@ namespace Utils.PlayerScripts
         public int side;
         public GameObject uiPrefab;
         public Vector2 offset;
+        public int borderW;
+        public int borderH;
 
         private Material _defaultMaterial;
         private Sprite _defaultSprite;
@@ -42,7 +44,7 @@ namespace Utils.PlayerScripts
             SetSide(side);
             //create the ui in the lower left corner of the screen
             Instantiate(uiPrefab, borders.min + offset, quaternion.identity);
-            borders.Set(borders.x, borders.y, borders.width - 1, borders.height);
+            borders.Set(borders.x, borders.y, borders.width + borderW, borders.height + borderH);
         }
 
         public void OnCursor(InputAction.CallbackContext value)
