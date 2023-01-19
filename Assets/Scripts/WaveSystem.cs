@@ -18,12 +18,8 @@ public class WaveSystem : MonoBehaviour
 
     public Vector2[] player2SpawnPoints;
 
-    int waveCount = 0;
-
     private int spawn;
     private int prevSpawn;
-
-    public int timer;
 
     public GameObject BasicEnemy;
     public GameObject FastEnemy;
