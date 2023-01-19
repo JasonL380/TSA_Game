@@ -2605,7 +2605,9 @@ MonoBehaviour:
     height: 0
   side: 0
   uiPrefab: {fileID: 8606864074288886660, guid: 983ff4b17fcbe371a8cd2b2ba22f604c, type: 3}
-  offset: {x: 9, y: 1}
+  offset: {x: 8, y: 1}
+  borderW: -1
+  borderH: 0
 --- !u!114 &5747943011240630066
 MonoBehaviour:
   m_ObjectHideFlags: 0
