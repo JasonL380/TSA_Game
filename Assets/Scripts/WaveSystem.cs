@@ -2,6 +2,7 @@
 Mateo Ferdico 1/17/23
 Spawns enemies in waves
 */
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,7 +10,8 @@ using UnityEngine.Rendering.VirtualTexturing;
 
 public class WaveSystem : MonoBehaviour
 {
-
+    System.Random rand = new System.Random();
+    
     public bool autoWaves = true;
 
     public Vector2[] player1SpawnPoints;
@@ -73,117 +75,166 @@ public class WaveSystem : MonoBehaviour
     }
     void WaveOneB()
     {
-        Instantiate(BasicEnemy, player1SpawnPoints[1], Quaternion.identity);
-        Instantiate(BasicEnemy, player1SpawnPoints[2], Quaternion.identity);
+        randNum();
+        Instantiate(BasicEnemy, player1SpawnPoints[spawn], Quaternion.identity);
+        Instantiate(BasicEnemy, player2SpawnPoints[spawn], Quaternion.identity);
 
-        Instantiate(BasicEnemy, player2SpawnPoints[1], Quaternion.identity);
-        Instantiate(BasicEnemy, player2SpawnPoints[2], Quaternion.identity);
+        randNum();
+        Instantiate(BasicEnemy, player1SpawnPoints[spawn], Quaternion.identity);
+        Instantiate(BasicEnemy, player2SpawnPoints[spawn], Quaternion.identity);
     }
     void WaveTwoA()
     {
-        Instantiate(BasicEnemy, player1SpawnPoints[0], Quaternion.identity);
-        Instantiate(BasicEnemy, player1SpawnPoints[1], Quaternion.identity);
-        Instantiate(BasicEnemy, player1SpawnPoints[2], Quaternion.identity);
-        Instantiate(BasicEnemy, player1SpawnPoints[3], Quaternion.identity);
+        randNum();
+        Instantiate(BasicEnemy, player1SpawnPoints[spawn], Quaternion.identity);
+        Instantiate(BasicEnemy, player2SpawnPoints[spawn], Quaternion.identity);
 
-        Instantiate(BasicEnemy, player2SpawnPoints[0], Quaternion.identity);
-        Instantiate(BasicEnemy, player2SpawnPoints[1], Quaternion.identity);
-        Instantiate(BasicEnemy, player2SpawnPoints[2], Quaternion.identity);
-        Instantiate(BasicEnemy, player2SpawnPoints[3], Quaternion.identity);
+        randNum();
+        Instantiate(BasicEnemy, player1SpawnPoints[spawn], Quaternion.identity);
+        Instantiate(BasicEnemy, player2SpawnPoints[spawn], Quaternion.identity);
+
+
+        randNum();
+        Instantiate(BasicEnemy, player1SpawnPoints[spawn], Quaternion.identity);
+        Instantiate(BasicEnemy, player2SpawnPoints[spawn], Quaternion.identity);
+
+        randNum();
+        Instantiate(BasicEnemy, player1SpawnPoints[spawn], Quaternion.identity);
+        Instantiate(BasicEnemy, player2SpawnPoints[spawn], Quaternion.identity);
     }
     void WaveTwoB()
     {
-        Instantiate(FastEnemy, player1SpawnPoints[1], Quaternion.identity);
-        Instantiate(FastEnemy, player1SpawnPoints[2], Quaternion.identity);
+        randNum();
+        Instantiate(FastEnemy, player1SpawnPoints[spawn], Quaternion.identity);
+        Instantiate(FastEnemy, player2SpawnPoints[spawn], Quaternion.identity);
 
-        Instantiate(FastEnemy, player2SpawnPoints[1], Quaternion.identity);
-        Instantiate(FastEnemy, player2SpawnPoints[2], Quaternion.identity);
+        randNum();
+        Instantiate(FastEnemy, player1SpawnPoints[spawn], Quaternion.identity);
+        Instantiate(FastEnemy, player2SpawnPoints[spawn], Quaternion.identity);
     }
     void WaveTwoC()
     {
-        Instantiate(BasicEnemy, player1SpawnPoints[0], Quaternion.identity);
-        Instantiate(BasicEnemy, player1SpawnPoints[3], Quaternion.identity);
+        randNum();
+        Instantiate(BasicEnemy, player1SpawnPoints[spawn], Quaternion.identity);
+        Instantiate(BasicEnemy, player2SpawnPoints[spawn], Quaternion.identity);
 
-        Instantiate(BasicEnemy, player2SpawnPoints[0], Quaternion.identity);
-        Instantiate(BasicEnemy, player2SpawnPoints[3], Quaternion.identity);
+        randNum();
+        Instantiate(BasicEnemy, player1SpawnPoints[spawn], Quaternion.identity);        
+        Instantiate(BasicEnemy, player2SpawnPoints[spawn], Quaternion.identity);
     }
     void WaveThreeA()
     {
-        Instantiate(BasicEnemy, player1SpawnPoints[0], Quaternion.identity);
-        Instantiate(FastEnemy, player1SpawnPoints[1], Quaternion.identity);
-        Instantiate(FastEnemy, player1SpawnPoints[2], Quaternion.identity);
-        Instantiate(BasicEnemy, player1SpawnPoints[3], Quaternion.identity);
+        randNum();
+        Instantiate(BasicEnemy, player1SpawnPoints[spawn], Quaternion.identity);
+        Instantiate(BasicEnemy, player2SpawnPoints[spawn], Quaternion.identity);
 
-        Instantiate(BasicEnemy, player2SpawnPoints[0], Quaternion.identity);
-        Instantiate(FastEnemy, player2SpawnPoints[1], Quaternion.identity);
-        Instantiate(FastEnemy, player2SpawnPoints[2], Quaternion.identity);
-        Instantiate(BasicEnemy, player2SpawnPoints[3], Quaternion.identity);
+        randNum();
+        Instantiate(FastEnemy, player1SpawnPoints[spawn], Quaternion.identity);
+        Instantiate(FastEnemy, player2SpawnPoints[spawn], Quaternion.identity);
+
+        randNum();
+        Instantiate(FastEnemy, player1SpawnPoints[spawn], Quaternion.identity);
+        Instantiate(FastEnemy, player2SpawnPoints[spawn], Quaternion.identity);
+
+        randNum();
+        Instantiate(BasicEnemy, player1SpawnPoints[spawn], Quaternion.identity);
+        Instantiate(BasicEnemy, player2SpawnPoints[spawn], Quaternion.identity);
     }
+
     void WaveThreeB()
     {
-        Instantiate(BasicEnemy, player1SpawnPoints[1], Quaternion.identity);
-        Instantiate(TankEnemy, player1SpawnPoints[2], Quaternion.identity);
-        Instantiate(BasicEnemy, player1SpawnPoints[3], Quaternion.identity);
+        randNum();
+        Instantiate(BasicEnemy, player1SpawnPoints[spawn], Quaternion.identity);
+        Instantiate(BasicEnemy, player2SpawnPoints[spawn], Quaternion.identity);
 
-        Instantiate(BasicEnemy, player2SpawnPoints[1], Quaternion.identity);
-        Instantiate(TankEnemy, player2SpawnPoints[2], Quaternion.identity);
-        Instantiate(BasicEnemy, player2SpawnPoints[3], Quaternion.identity);
+        randNum();
+        Instantiate(TankEnemy, player1SpawnPoints[spawn], Quaternion.identity);
+        Instantiate(TankEnemy, player2SpawnPoints[spawn], Quaternion.identity);
+
+        randNum();
+        Instantiate(BasicEnemy, player1SpawnPoints[spawn], Quaternion.identity);
+        Instantiate(BasicEnemy, player2SpawnPoints[spawn], Quaternion.identity);
     }
     void WaveFourA()
     {
-        Instantiate(BasicEnemy, player1SpawnPoints[0], Quaternion.identity);
-        Instantiate(TankEnemy, player1SpawnPoints[1], Quaternion.identity);
-        Instantiate(TankEnemy, player1SpawnPoints[2], Quaternion.identity);
-        Instantiate(BasicEnemy, player1SpawnPoints[3], Quaternion.identity);
+        randNum();
+        Instantiate(BasicEnemy, player1SpawnPoints[spawn], Quaternion.identity);
+        Instantiate(BasicEnemy, player2SpawnPoints[spawn], Quaternion.identity);
 
-        Instantiate(BasicEnemy, player2SpawnPoints[0], Quaternion.identity);
-        Instantiate(TankEnemy, player2SpawnPoints[1], Quaternion.identity);
-        Instantiate(TankEnemy, player2SpawnPoints[2], Quaternion.identity);
-        Instantiate(BasicEnemy, player2SpawnPoints[3], Quaternion.identity);
+        randNum();
+        Instantiate(TankEnemy, player1SpawnPoints[spawn], Quaternion.identity);
+        Instantiate(TankEnemy, player2SpawnPoints[spawn], Quaternion.identity);
+
+        randNum();
+        Instantiate(TankEnemy, player1SpawnPoints[spawn], Quaternion.identity);
+        Instantiate(TankEnemy, player2SpawnPoints[spawn], Quaternion.identity);
+
+        randNum();
+        Instantiate(BasicEnemy, player1SpawnPoints[spawn], Quaternion.identity);
+        Instantiate(BasicEnemy, player2SpawnPoints[spawn], Quaternion.identity);
     }
     void WaveFourB()
     {
-        Instantiate(FastEnemy, player1SpawnPoints[0], Quaternion.identity);
-        Instantiate(DuplicateEnemy, player1SpawnPoints[1], Quaternion.identity);
-        Instantiate(DuplicateEnemy, player1SpawnPoints[2], Quaternion.identity);
-        Instantiate(FastEnemy, player1SpawnPoints[3], Quaternion.identity);
+        randNum();
+        Instantiate(FastEnemy, player1SpawnPoints[spawn], Quaternion.identity);
+        Instantiate(FastEnemy, player2SpawnPoints[spawn], Quaternion.identity);
 
-        Instantiate(FastEnemy, player2SpawnPoints[0], Quaternion.identity);
-        Instantiate(DuplicateEnemy, player2SpawnPoints[1], Quaternion.identity);
-        Instantiate(DuplicateEnemy, player2SpawnPoints[2], Quaternion.identity);
-        Instantiate(FastEnemy, player2SpawnPoints[3], Quaternion.identity);
+        randNum();
+        Instantiate(DuplicateEnemy, player1SpawnPoints[spawn], Quaternion.identity);
+        Instantiate(DuplicateEnemy, player2SpawnPoints[spawn], Quaternion.identity);
+
+        randNum();
+        Instantiate(DuplicateEnemy, player1SpawnPoints[spawn], Quaternion.identity);
+        Instantiate(DuplicateEnemy, player2SpawnPoints[spawn], Quaternion.identity);
+
+        randNum();
+        Instantiate(FastEnemy, player1SpawnPoints[spawn], Quaternion.identity);
+        Instantiate(FastEnemy, player2SpawnPoints[spawn], Quaternion.identity);
     }
     void WaveFiveA()
     {
-        Instantiate(TankEnemy, player1SpawnPoints[0], Quaternion.identity);
-        Instantiate(DuplicateEnemy, player1SpawnPoints[1], Quaternion.identity);
-        Instantiate(DuplicateEnemy, player1SpawnPoints[2], Quaternion.identity);
-        Instantiate(FastEnemy, player1SpawnPoints[3], Quaternion.identity);
+        randNum();
+        Instantiate(TankEnemy, player1SpawnPoints[spawn], Quaternion.identity);
+        Instantiate(TankEnemy, player2SpawnPoints[spawn], Quaternion.identity);
 
-        Instantiate(TankEnemy, player2SpawnPoints[0], Quaternion.identity);
-        Instantiate(DuplicateEnemy, player2SpawnPoints[1], Quaternion.identity);
-        Instantiate(DuplicateEnemy, player2SpawnPoints[2], Quaternion.identity);
-        Instantiate(FastEnemy, player2SpawnPoints[3], Quaternion.identity);
+        randNum();
+        Instantiate(DuplicateEnemy, player1SpawnPoints[spawn], Quaternion.identity);
+        Instantiate(DuplicateEnemy, player2SpawnPoints[spawn], Quaternion.identity);
+
+        randNum();
+        Instantiate(DuplicateEnemy, player1SpawnPoints[spawn], Quaternion.identity);
+        Instantiate(DuplicateEnemy, player2SpawnPoints[spawn], Quaternion.identity);
+
+        randNum();
+        Instantiate(FastEnemy, player1SpawnPoints[spawn], Quaternion.identity);
+        Instantiate(FastEnemy, player2SpawnPoints[spawn], Quaternion.identity);
     }
     void WaveFiveB()
     {
+        randNum();
         Instantiate(FastEnemy, player1SpawnPoints[1], Quaternion.identity);
-        Instantiate(DuplicateEnemy, player1SpawnPoints[2], Quaternion.identity);
-        Instantiate(TankEnemy, player1SpawnPoints[3], Quaternion.identity);
-        Instantiate(FastEnemy, player1SpawnPoints[0], Quaternion.identity);
-
         Instantiate(FastEnemy, player2SpawnPoints[1], Quaternion.identity);
+
+        randNum();
+        Instantiate(DuplicateEnemy, player1SpawnPoints[2], Quaternion.identity);
         Instantiate(DuplicateEnemy, player2SpawnPoints[2], Quaternion.identity);
+
+        randNum();
+        Instantiate(TankEnemy, player1SpawnPoints[3], Quaternion.identity);
         Instantiate(TankEnemy, player2SpawnPoints[3], Quaternion.identity);
+
+        randNum();
+        Instantiate(FastEnemy, player1SpawnPoints[0], Quaternion.identity);
         Instantiate(FastEnemy, player2SpawnPoints[0], Quaternion.identity);
     }
 
     void randNum()
     {
-        int r = (int)(Random.value * player1SpawnPoints.Length);
+        int r = rand.Next(player1SpawnPoints.Length);
+        Debug.Log(r);
         while(r == prevSpawn)
         {
-            r = (int)(Random.value * player1SpawnPoints.Length);
+            r = rand.Next(player1SpawnPoints.Length);
         }
         spawn = r;
         prevSpawn = spawn;
