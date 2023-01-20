@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public class TowerMenu : MonoBehaviour
@@ -9,6 +10,7 @@ public class TowerMenu : MonoBehaviour
     public GameObject Cursor;
 
     public bool IsOpen = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,10 +39,12 @@ public class TowerMenu : MonoBehaviour
     {
         Cursor.SetActive(false);
         Menu.SetActive(true);
+        IsOpen = true;
     }
     void CloseMenu()
     {
         Cursor.SetActive(true);
         Menu.SetActive(false);
+        IsOpen = false;
     }
 }
