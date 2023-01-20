@@ -877,6 +877,7 @@ GameObject:
   - component: {fileID: 7937084783965704825}
   - component: {fileID: 2497685196274058134}
   - component: {fileID: 4275954322949213188}
+  - component: {fileID: 728039632945642171}
   m_Layer: 5
   m_Name: DefenseTab
   m_TagString: Untagged
@@ -949,6 +950,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &728039632945642171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2128076295595910461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f111a7fcc24bea42844a844cde22662, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FirstSelected: {fileID: 6725194245209249784}
 --- !u!1 &2521918362474852253
 GameObject:
   m_ObjectHideFlags: 0
@@ -1689,7 +1703,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Menu: {fileID: 8008253568894146281}
-  Cursor: {fileID: 5747943011240630030}
+  cursor: {fileID: 5747943011240630064}
   IsOpen: 0
 --- !u!1 &3245067018246534442
 GameObject:
@@ -4710,6 +4724,7 @@ MonoBehaviour:
   borderH: 0
   speed: 0.25
   input: {x: 0, y: 0}
+  movementEnabled: 1
 --- !u!114 &5747943011240630066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4789,10 +4804,10 @@ MonoBehaviour:
     m_ActionName: ingame/Mouse[/Mouse/position]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5747943011240630064}
-        m_TargetAssemblyTypeName: Utils.PlayerScripts.Cursor, Assembly-CSharp
-        m_MethodName: OnMouse
-        m_Mode: 0
+      - m_Target: {fileID: 1459850463846322570}
+        m_TargetAssemblyTypeName: TowerMenu, Assembly-CSharp
+        m_MethodName: OnOpenTowerMenu
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4835,6 +4850,7 @@ GameObject:
   - component: {fileID: 1752959963842177372}
   - component: {fileID: 1922827495665996411}
   - component: {fileID: 8452537849478767640}
+  - component: {fileID: 5393858818685119173}
   m_Layer: 5
   m_Name: OffenseTab
   m_TagString: Untagged
@@ -4905,6 +4921,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &5393858818685119173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6051982012473293013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f111a7fcc24bea42844a844cde22662, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FirstSelected: {fileID: 4713044202326641721}
 --- !u!1 &6725194245209249784
 GameObject:
   m_ObjectHideFlags: 0
@@ -6162,7 +6191,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &6741697702738386135
 RectTransform:
   m_ObjectHideFlags: 0

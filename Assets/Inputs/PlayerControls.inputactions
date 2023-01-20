@@ -194,7 +194,7 @@
                     "name": "",
                     "id": "687b149e-5270-4795-a813-45fab2e88db4",
                     "path": "<Gamepad>/buttonNorth",
-                    "interactions": "Tap",
+                    "interactions": "",
                     "processors": "",
                     "groups": "playing",
                     "action": "OpenTowerMenu",
