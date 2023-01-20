@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using Utils;
 
 
 public class TurretGrid : MonoBehaviour
@@ -15,18 +16,21 @@ public class TurretGrid : MonoBehaviour
     [Tooltip("The layers that cannot be placed on, for example walls.")]
     public LayerMask obstacleLayerMask;
 
+    public PathfinderGraphManager manager;
+    
     //public Vector2 pos;
     //public GameObject turretPrefab;
 
     private void Start()
     {
+        manager = FindObjectOfType<PathfinderGraphManager>();
         //print(PlaceObjectAtPosition(turretPrefab, pos, 0));
     }
 
-    private void FixedUpdate()
+    /*private void FixedUpdate()
     {
         DrawSquare(GetGridPosition(transform.position), Color.red, 120);
-    }
+    }*/
 
     /// <summary>
     /// get the object at a position
@@ -91,6 +95,8 @@ public class TurretGrid : MonoBehaviour
         GameObject turret = Instantiate(prefab, gridPos, Quaternion.identity);
         turret.layer = layer;
         _turretMap[gridPos] = turret;
+        
+        manager.UpdateGraph(gridPos - gridSize, gridPos + gridSize);
         
         return true;
     }
