@@ -27,6 +27,7 @@ public class Pathfinder : MonoBehaviour
     private int currentPathWaypoint = 0;
     private Rigidbody2D myRB2D;
     private CircleCollider2D myCirc;
+    private WaveSystem waveSystem;
     public bool displayDebug = true;
     private Vector2 currentTarget;
     [Tooltip("The center of the pathfinding area")]
@@ -54,17 +55,20 @@ public class Pathfinder : MonoBehaviour
     public GameObject graphManager;
 
     private PathfinderGraphManager graphManagerScript;
-    private bool hasManager = false;
-
+    public bool hasManager = false;
+    private int lastUpdate;
+    
     private void Start()
     {
         myRB2D = GetComponent<Rigidbody2D>();
         myCirc = GetComponent<CircleCollider2D>();
-        //target = waypoints[0];
+        waveSystem = GetComponent<WaveSystem>();
+
+        waypoints = waveSystem.player1EndPoints;
         
         if (graphManager != null)
         {
-            graphManagerScript = graphManager.GetComponent<PathfinderGraphManager>();
+            graphManagerScript = FindObjectOfType<PathfinderGraphManager>();
             if (graphManagerScript != null)
             {
                 hasManager = true;
@@ -75,6 +79,8 @@ public class Pathfinder : MonoBehaviour
                 boxSize = graphManagerScript.boxSize;
                 boxCenter = graphManagerScript.boxCenter;
             }
+
+            lastUpdate = graphManagerScript.update;
         }
 
         if (!hasManager)
@@ -168,7 +174,23 @@ public class Pathfinder : MonoBehaviour
 
     private void FixedUpdate()
     {
-        pace();
+        /*if (pathfindingWaypoints.Count == 0)
+        {
+            pathfindingWaypoints = a_star_search(actualToGrid(transform.position),
+                actualToGrid(waypoints[currentPathWaypoint]));
+        }*/
+        if (graphManagerScript.update != lastUpdate)
+        {
+            pathfindingWaypoints = a_star_search(actualToGrid(transform.position),
+                actualToGrid(waypoints[currentPathWaypoint]));
+            lastUpdate = graphManagerScript.update;
+            currentWaypoint = 0;
+        }
+
+        if (pathfindingWaypoints.Count != 0)
+        {
+            pace();
+        }
     }
 
     
@@ -189,13 +211,11 @@ public class Pathfinder : MonoBehaviour
         while (queue.Count != 0)
         {
             Vector2Int current = queue.Dequeue();
-
+            //print("Visiting " + current);
             if (current == goal)
             {
                 break;
             }
-
-            //print("Visiting " + current);
             int currentPoint;
             if (hasManager)
             {
@@ -211,19 +231,38 @@ public class Pathfinder : MonoBehaviour
                 if ((currentPoint & (1 << i)) != 0)
                 {
                     Vector2Int next = getNeighbor(current, i);
-                    float new_cost = cost_so_far[current] + 1;
-                    if (!cost_so_far.ContainsKey(next) || new_cost < cost_so_far[next])
+                    int nextPoint;
+                    if (hasManager)
                     {
-                        cost_so_far[next] = new_cost;
-
-                        queue.Enqueue(next, new_cost + heuristic(next, goal));
-                        cameFrom[next] = current;
-                        //print(((gridSize * next) - gridStart).ToString() + ", " + (gridSize * current) + gridStart);
-                        if (displayDebug)
-                        {
-                            Debug.DrawLine((gridSize * next) + gridStart, (gridSize * current) + gridStart, Color.magenta, 30);
-                        }
+                        nextPoint = graphManagerScript.graph[next.x, next.y];
                     }
+                    else
+                    {
+                        nextPoint = graph[next.x, next.y];
+                    }
+
+                    //if ((nextPoint & 1) != 0)
+                    //{
+                    float new_cost = cost_so_far[current] + (nextPoint >> 8);
+                        if (!cost_so_far.ContainsKey(next) || new_cost < cost_so_far[next])
+                        {
+                            if ((nextPoint >> 8) > 1)
+                            {
+                                print("cost is " + (nextPoint >> 8));
+                            }
+
+                            cost_so_far[next] = new_cost;
+
+                            queue.Enqueue(next, new_cost + heuristic(next, goal));
+                            cameFrom[next] = current;
+                            //print(((gridSize * next) - gridStart).ToString() + ", " + (gridSize * current) + gridStart);
+                            if (displayDebug)
+                            {
+                                Debug.DrawLine((gridSize * next) + gridStart, (gridSize * current) + gridStart,
+                                    Color.magenta, 30);
+                            }
+                        } 
+                    //}
                 }
             }
         }
@@ -287,11 +326,19 @@ public class Pathfinder : MonoBehaviour
 
     Vector2 gridToActual(Vector2 gridCoord)
     {
+        if (hasManager)
+        {
+            return graphManagerScript.gridToActual(gridCoord);
+        }
         return (gridSize * gridCoord) + gridStart;
     }
 
     Vector2Int actualToGrid(Vector2 actual)
     {
+        if (hasManager)
+        {
+            return graphManagerScript.actualToGrid(actual);
+        }
         Vector2 grid = (actual - (boxCenter - (boxSize / 2))) / gridSize;
         grid.x = Math.Min(Math.Max(grid.x, 0), graphDimensions.x - 1);
         grid.y = Math.Min(Math.Max(grid.y, 0), graphDimensions.y - 1);
@@ -316,28 +363,31 @@ public class Pathfinder : MonoBehaviour
 
     void pace()
     {
-        Vector3 direction = pathfindingWaypoints[currentWaypoint] - (Vector2) transform.position;
-        Vector2 currentPos;
-        currentPos.x = transform.position.x;
-        currentPos.y = transform.position.y;
-        //check if close to target, if so go to next one if possible
-        if (direction.magnitude <= 0.5)
+        if (pathfindingWaypoints.Count > 0)
         {
-            ++currentWaypoint;
-            if (currentWaypoint >= pathfindingWaypoints.Count - 1)
+            Vector3 direction = pathfindingWaypoints[currentWaypoint] - (Vector2) transform.position;
+            Vector2 currentPos;
+            currentPos.x = transform.position.x;
+            currentPos.y = transform.position.y;
+            //check if close to target, if so go to next one if possible
+            if (direction.magnitude <= 0.5)
             {
-                currentPathWaypoint++;
-                if (currentPathWaypoint >= waypoints.Length)
+                ++currentWaypoint;
+                if (currentWaypoint >= pathfindingWaypoints.Count - 1)
                 {
-                    currentPathWaypoint = 0;
+                    currentPathWaypoint++;
+                    if (currentPathWaypoint >= waypoints.Length)
+                    {
+                        currentPathWaypoint = 0;
+                    }
+                    pathfindingWaypoints = a_star_search(actualToGrid(currentPos), actualToGrid(waypoints[currentPathWaypoint]));
+                    currentWaypoint = 0;
                 }
-                pathfindingWaypoints = a_star_search(actualToGrid(currentPos), actualToGrid(waypoints[currentPathWaypoint]));
-                currentWaypoint = 0;
+                currentTarget = pathfindingWaypoints[currentWaypoint];
+                //a_star_search(actualToGrid(currentPos), actualToGrid(waypoints[currentWaypoint]));
             }
-            currentTarget = pathfindingWaypoints[currentWaypoint];
-            //a_star_search(actualToGrid(currentPos), actualToGrid(waypoints[currentWaypoint]));
-        }
         
-        myRB2D.velocity = direction.normalized * speed;
+            myRB2D.velocity = direction.normalized * speed;
+        }
     }
 }
