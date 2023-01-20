@@ -6,7 +6,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Rendering.VirtualTexturing;
 
 public class WaveSystem : MonoBehaviour
 {
@@ -15,8 +14,10 @@ public class WaveSystem : MonoBehaviour
     public bool autoWaves = true;
 
     public Vector2[] player1SpawnPoints;
-
     public Vector2[] player2SpawnPoints;
+
+    public Vector2[] player1EndPoints;
+    public Vector2[] player2EndPoints;
 
     private int spawn;
     private int prevSpawn;

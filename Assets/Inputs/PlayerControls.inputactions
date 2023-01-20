@@ -59,6 +59,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "OpenTowerMenu",
+                    "type": "Button",
+                    "id": "095c5594-1fa2-4799-b871-fae2afaa2946",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -66,7 +75,7 @@
                     "name": "",
                     "id": "35d2015b-a464-4d69-b2bf-804abc2bf1ae",
                     "path": "*/{PrimaryAction}",
-                    "interactions": "",
+                    "interactions": "Tap",
                     "processors": "",
                     "groups": "playing",
                     "action": "click",
@@ -169,6 +178,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Mouse",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "687b149e-5270-4795-a813-45fab2e88db4",
+                    "path": "<Gamepad>/buttonNorth",
+                    "interactions": "Tap",
+                    "processors": "",
+                    "groups": "playing",
+                    "action": "OpenTowerMenu",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

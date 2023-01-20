@@ -27,6 +27,7 @@ public class Pathfinder : MonoBehaviour
     private int currentPathWaypoint = 0;
     private Rigidbody2D myRB2D;
     private CircleCollider2D myCirc;
+    private WaveSystem waveSystem;
     public bool displayDebug = true;
     private Vector2 currentTarget;
     [Tooltip("The center of the pathfinding area")]
@@ -61,7 +62,9 @@ public class Pathfinder : MonoBehaviour
     {
         myRB2D = GetComponent<Rigidbody2D>();
         myCirc = GetComponent<CircleCollider2D>();
-        //target = waypoints[0];
+        waveSystem = GetComponent<WaveSystem>();
+
+        waypoints = waveSystem.player1EndPoints;
         
         if (graphManager != null)
         {

@@ -469,6 +469,7 @@ GameObject:
   - component: {fileID: 1653873708}
   - component: {fileID: 1653873709}
   - component: {fileID: 1653873710}
+  - component: {fileID: 1653873711}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -586,6 +587,7 @@ MonoBehaviour:
   obstacleLayerMask:
     serializedVersion: 2
     m_Bits: 0
+  manager: {fileID: 0}
 --- !u!114 &1653873710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -598,3 +600,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5edfc440ab01abc4498c95d61efe95ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1653873711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1653873704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0c9aa82da764ce1afb13606a26feedd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wallLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  displayDebug: 1
+  pathfinderSize: 0
+  boxCenter: {x: 0, y: 0}
+  boxSize: {x: 0, y: 0}
+  nodeDensity: 0
+  gridSize: {x: 0, y: 0}
+  gridStart: {x: 0, y: 0}
+  graphDimensions: {x: 0, y: 0}
+  update: 0
