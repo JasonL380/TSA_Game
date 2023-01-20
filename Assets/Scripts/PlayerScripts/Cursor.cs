@@ -23,12 +23,18 @@ namespace Utils.PlayerScripts
         public int borderW;
         public int borderH;
 
+        [Tooltip("The amount of time that it takes for this to move one tile")]
+        public float speed = 0.5f;
+        
         private Material _defaultMaterial;
         private Sprite _defaultSprite;
         private TurretGrid _turretGrid;
         private SelectManager _selectManager;
         private SpriteRenderer _spriteRenderer;
-
+        private float movementCooldown = 0;
+        public Vector2 input;
+        private Vector2 velocity = Vector2.zero;
+        private Vector2 smoothingTarget;
 
         private void Start()
         {
@@ -37,6 +43,7 @@ namespace Utils.PlayerScripts
             _spriteRenderer = GetComponent<SpriteRenderer>();
             _defaultMaterial = _spriteRenderer.material;
             _defaultSprite = _spriteRenderer.sprite;
+            smoothingTarget = transform.position;
             
             //determine the borders
             borders = _calculateCameraRect();
@@ -47,15 +54,102 @@ namespace Utils.PlayerScripts
             borders.Set(borders.x, borders.y, borders.width + borderW, borders.height + borderH);
         }
 
+        private void FixedUpdate()
+        {
+            if (movementCooldown > 0)
+            {
+                movementCooldown -= Time.deltaTime;
+            }
+            //update the position
+            Vector2 movement = Vector2.zero;
+            if (movementCooldown <= 0)
+            {
+                if (Math.Abs(input.x) > Math.Abs(input.y))
+                {
+                    if (input.x > 0)
+                    {
+                        movement.x += _turretGrid.gridSize.x;
+                    }
+                    else
+                    {
+                        movement.x -= _turretGrid.gridSize.x;
+                    }
+                }
+                else if (Math.Abs(input.y) > Math.Abs(input.x))
+                {
+                    if (input.y > 0)
+                    {
+                        movement.y += _turretGrid.gridSize.y;
+                    }
+                    else
+                    {
+                        movement.y -= _turretGrid.gridSize.y;
+                    }
+                }
+            
+                if(borders.Contains(currentPos + movement))
+                {
+                    currentPos += movement;
+                    UpdatePosition(true);
+                }
+
+                movementCooldown = speed;
+            }
+        }
+
+        private void Update()
+        {
+            transform.position = Vector2.SmoothDamp(transform.position, smoothingTarget, ref velocity, speed/2);
+        }
+
         public void OnCursor(InputAction.CallbackContext value)
         {
-            Vector2 val = value.ReadValue<Vector2>();
-            if (borders.Contains(currentPos + val * sensitivity))
+            input = value.ReadValue<Vector2>();
+           /* input = val;
+            Vector2 movement = Vector2.zero;
+            if (movementCooldown <= 0)
             {
+                if (Math.Abs(val.x) > Math.Abs(val.y))
+                {
+                    if (val.x > 0)
+                    {
+                        movement.x += _turretGrid.gridSize.x;
+                    }
+                    else
+                    {
+                        movement.x -= _turretGrid.gridSize.x;
+                    }
+                }
+                else if (Math.Abs(val.y) > Math.Abs(val.x))
+                {
+                    if (val.y > 0)
+                    {
+                        movement.y += _turretGrid.gridSize.y;
+                    }
+                    else
+                    {
+                        movement.y -= _turretGrid.gridSize.y;
+                    }
+                }
+            
+                if(borders.Contains(currentPos + movement))
+                {
+                    currentPos += movement;
+                    UpdatePosition();
+                }
+
+                movementCooldown = speed;
+            }
+            
+                
+            
+            /*if (borders.Contains(currentPos + val * sensitivity))
+            {
+                val.
                 lastPos = currentPos;
                 currentPos += val * sensitivity;
                 UpdatePosition();
-            }
+            }*/
         }
 
         /*
@@ -96,13 +190,22 @@ namespace Utils.PlayerScripts
         //secondary click, this will unselect the tower
         private void OnSecondaryClick(InputAction.CallbackContext value)
         {
-            
+            _selectManager.disablePurchase();
+            _spriteRenderer.material = _defaultMaterial;
+            _spriteRenderer.sprite = _defaultSprite;
         }
         
-        private void UpdatePosition()
+        private void UpdatePosition(bool smooth)
         {
             Vector2 pos = _turretGrid.GetGridPosition(currentPos);
-            transform.position = pos;
+            if (smooth)
+            {
+                smoothingTarget = pos;
+            }
+            else
+            {
+                transform.position = pos;
+            }
         }
         
         //determine the main camera's rect because unity won't do this for me
@@ -153,7 +256,7 @@ namespace Utils.PlayerScripts
             
             //center the cursor in the new rect
             currentPos = borders.center;
-            UpdatePosition();
+            UpdatePosition(false);
         }
     }
 }
