@@ -65,7 +65,7 @@ public class Pathfinder : MonoBehaviour
         
         if (graphManager != null)
         {
-            graphManagerScript = graphManager.GetComponent<PathfinderGraphManager>();
+            graphManagerScript = FindObjectOfType<PathfinderGraphManager>();
             if (graphManagerScript != null)
             {
                 hasManager = true;
