@@ -618,8 +618,8 @@ MonoBehaviour:
   displayDebug: 1
   pathfinderSize: 0
   boxCenter: {x: 0, y: 0}
-  boxSize: {x: 0, y: 0}
-  nodeDensity: 0
+  boxSize: {x: 32, y: 18}
+  nodeDensity: 1
   gridSize: {x: 0, y: 0}
   gridStart: {x: 0, y: 0}
   graphDimensions: {x: 0, y: 0}
