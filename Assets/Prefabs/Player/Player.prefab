@@ -4709,6 +4709,7 @@ MonoBehaviour:
   borderW: -1
   borderH: 0
   speed: 0.25
+  input: {x: 0, y: 0}
 --- !u!114 &5747943011240630066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4786,6 +4787,38 @@ MonoBehaviour:
         m_CallState: 1
     m_ActionId: 8a72db93-ec3f-478f-aa08-e39e467b7db3
     m_ActionName: ingame/Mouse[/Mouse/position]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5747943011240630064}
+        m_TargetAssemblyTypeName: Utils.PlayerScripts.Cursor, Assembly-CSharp
+        m_MethodName: OnMouse
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+    m_ActionId: 095c5594-1fa2-4799-b871-fae2afaa2946
+    m_ActionName: ingame/OpenTowerMenu[/Gamepad/buttonNorth]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5747943011240630064}
+        m_TargetAssemblyTypeName: Utils.PlayerScripts.Cursor, Assembly-CSharp
+        m_MethodName: OnSecondaryClick
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+    m_ActionId: 8474de85-33e4-4099-9279-0ccb552602d0
+    m_ActionName: ingame/secondaryClick[/Mouse/rightButton,/Gamepad/buttonWest]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: playing
   m_DefaultActionMap: ingame

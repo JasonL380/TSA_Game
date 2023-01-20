@@ -188,7 +188,7 @@ namespace Utils.PlayerScripts
         }
 
         //secondary click, this will unselect the tower
-        private void OnSecondaryClick(InputAction.CallbackContext value)
+        public void OnSecondaryClick(InputAction.CallbackContext value)
         {
             _selectManager.disablePurchase();
             _spriteRenderer.material = _defaultMaterial;

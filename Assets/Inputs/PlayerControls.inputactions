@@ -68,6 +68,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "secondaryClick",
+                    "type": "Button",
+                    "id": "8474de85-33e4-4099-9279-0ccb552602d0",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -189,6 +198,17 @@
                     "processors": "",
                     "groups": "playing",
                     "action": "OpenTowerMenu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0122c080-967a-4b1b-936a-1d6fd0233c88",
+                    "path": "*/{SecondaryAction}",
+                    "interactions": "Tap",
+                    "processors": "",
+                    "groups": "playing",
+                    "action": "secondaryClick",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
