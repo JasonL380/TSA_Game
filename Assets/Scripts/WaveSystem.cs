@@ -5,6 +5,7 @@ Spawns enemies in waves
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 
 public class WaveSystem : MonoBehaviour
@@ -19,7 +20,6 @@ public class WaveSystem : MonoBehaviour
     public Vector2[] player1EndPoints;
     public Vector2[] player2EndPoints;
 
-    private int spawn;
     private int prevSpawn;
 
     public GameObject BasicEnemy;
@@ -49,7 +49,7 @@ public class WaveSystem : MonoBehaviour
         }
     }
 
-    public void spawnEnemy(GameObject enemy)
+    public void spawnEnemyButton(GameObject enemy)
     {
         Instantiate(enemy, player1SpawnPoints[1], Quaternion.identity);
         Instantiate(enemy, player2SpawnPoints[1], Quaternion.identity);
@@ -62,13 +62,8 @@ public class WaveSystem : MonoBehaviour
 
     void WaveOneA()
     {
-        randNum();
-        Instantiate(BasicEnemy, player1SpawnPoints[spawn], Quaternion.identity);
-        Instantiate(BasicEnemy, player2SpawnPoints[spawn], Quaternion.identity);
-
-        randNum();
-        Instantiate(BasicEnemy, player1SpawnPoints[spawn], Quaternion.identity);
-        Instantiate(BasicEnemy, player2SpawnPoints[spawn], Quaternion.identity);
+        spawnEnemy(BasicEnemy);
+        spawnEnemy(BasicEnemy);
     }
     void WaveOneB()
     {
@@ -225,7 +220,19 @@ public class WaveSystem : MonoBehaviour
         Instantiate(FastEnemy, player2SpawnPoints[0], Quaternion.identity);
     }
 
-    void randNum()
+    void spawnEnemy(GameObject enemy)
+    {
+        int spawn = randNum();
+        GameObject newEnemy = Instantiate(enemy, player1SpawnPoints[spawn], Quaternion.identity);
+        Pathfinder pathfinder = newEnemy.GetComponent<Pathfinder>();
+        pathfinder.waypoints[0] = player1EndPoints[spawn];
+
+        newEnemy = Instantiate(enemy, player2SpawnPoints[spawn], Quaternion.identity);
+        pathfinder = newEnemy.GetComponent<Pathfinder>();
+        pathfinder.waypoints[0] = player2EndPoints[spawn];
+    }
+
+    int randNum()
     {
         int r = rand.Next(player1SpawnPoints.Length);
         Debug.Log(r);
@@ -233,7 +240,7 @@ public class WaveSystem : MonoBehaviour
         {
             r = rand.Next(player1SpawnPoints.Length);
         }
-        spawn = r;
-        prevSpawn = spawn;
+        prevSpawn = r;
+        return r;
     }
 }
