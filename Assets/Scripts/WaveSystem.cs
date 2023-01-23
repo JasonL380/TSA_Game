@@ -14,6 +14,10 @@ public class WaveSystem : MonoBehaviour
     
     public bool autoWaves = true;
 
+    [Tooltip("Set # of waves, must be at least 5")]
+
+    public int howManyWaves;
+
     public Vector2[] player1SpawnPoints;
     public Vector2[] player2SpawnPoints;
 
@@ -22,30 +26,40 @@ public class WaveSystem : MonoBehaviour
 
     private int prevSpawn;
 
+    public int waveCount;
+
     public GameObject BasicEnemy;
     public GameObject FastEnemy;
     public GameObject DuplicateEnemy;
     public GameObject TankEnemy;
+
     // Start is called before the first frame update
     void Start()
     {
         if (autoWaves)
         {
             Invoke("WaveOneA", 0);
-            Invoke("WaveOneB", 2);
+            Invoke("WaveOneB", 3);
 
-            Invoke("WaveTwoA", 7);
-            Invoke("WaveTwoB", 9);
-            Invoke("WaveTwoC", 11);
+            Invoke("WaveTwoA", 8);
+            Invoke("WaveTwoB", 11);
+            Invoke("WaveTwoC", 14);
 
-            Invoke("WaveThreeA", 16);
-            Invoke("WaveThreeB", 19);
+            Invoke("WaveThreeA", 20);
+            Invoke("WaveThreeB", 23);
 
-            Invoke("WaveFourA", 24);
-            Invoke("WaveFourB", 27);
+            Invoke("WaveFourA", 30);
+            Invoke("WaveFourB", 34);
 
-            Invoke("WaveFiveA", 32);
-            Invoke("WaveFiveB", 36);
+            Invoke("WaveFiveA", 40);
+            Invoke("WaveFiveB", 44);
+
+            for (int i = 0; i < howManyWaves - 5; i++)
+            {
+                Invoke("RandomWave", 50 + (i * 6));
+                Invoke("RandomWave", 53 + (i * 6));
+            }
+
         }
     }
 
@@ -69,6 +83,7 @@ public class WaveSystem : MonoBehaviour
     {
         spawnEnemy(BasicEnemy);
         spawnEnemy(BasicEnemy);
+        ++waveCount;
     }
     void WaveTwoA()
     {
@@ -86,6 +101,7 @@ public class WaveSystem : MonoBehaviour
     {
         spawnEnemy(BasicEnemy);
         spawnEnemy(BasicEnemy);
+        ++waveCount;
     }
     void WaveThreeA()
     {
@@ -100,6 +116,7 @@ public class WaveSystem : MonoBehaviour
         spawnEnemy(BasicEnemy);
         spawnEnemy(TankEnemy);
         spawnEnemy(BasicEnemy);
+        ++waveCount;
     }
     void WaveFourA()
     {
@@ -114,6 +131,7 @@ public class WaveSystem : MonoBehaviour
         spawnEnemy(DuplicateEnemy);
         spawnEnemy(DuplicateEnemy);
         spawnEnemy(FastEnemy);
+        ++waveCount;
     }
     void WaveFiveA()
     {
@@ -128,6 +146,32 @@ public class WaveSystem : MonoBehaviour
         spawnEnemy(DuplicateEnemy);
         spawnEnemy(TankEnemy);
         spawnEnemy(FastEnemy);
+        ++waveCount;
+    }
+
+    void RandomWave()
+    {
+        for (int i = 0; i < rand.Next(waveCount); i++)
+        {
+            int enemyType = rand.Next(100);
+            if (enemyType >= 0 && enemyType < 49) //50% chance to spawn basicenemy
+            {
+                spawnEnemy(BasicEnemy);
+            }
+            else if (enemyType < 69) //20% chance to spawn fastenemy
+            {
+                spawnEnemy(FastEnemy);
+            }
+            else if (enemyType < 89) //20% chance to spawn duplicateenemy
+            {
+                spawnEnemy(DuplicateEnemy);
+            }
+            else //10% chance to spawn tankenemy
+            {
+                spawnEnemy(TankEnemy);
+            }
+        }
+        ++waveCount;
     }
 
     void spawnEnemy(GameObject enemy)
