@@ -62,26 +62,20 @@ public class Pathfinder : MonoBehaviour
     {
         myRB2D = GetComponent<Rigidbody2D>();
         myCirc = GetComponent<CircleCollider2D>();
-        waveSystem = GetComponent<WaveSystem>();
-
-        waypoints = waveSystem.player1EndPoints;
         
-        if (graphManager != null)
+        graphManagerScript = FindObjectOfType<PathfinderGraphManager>();
+        if (graphManagerScript != null)
         {
-            graphManagerScript = FindObjectOfType<PathfinderGraphManager>();
-            if (graphManagerScript != null)
-            {
-                hasManager = true;
-                //get all relevant values from the manager
-                gridStart = graphManagerScript.gridStart;
-                gridSize = graphManagerScript.gridSize;
-                graphDimensions = graphManagerScript.graphDimensions;
-                boxSize = graphManagerScript.boxSize;
-                boxCenter = graphManagerScript.boxCenter;
-            }
-
-            lastUpdate = graphManagerScript.update;
+            hasManager = true;
+            //get all relevant values from the manager
+            gridStart = graphManagerScript.gridStart;
+            gridSize = graphManagerScript.gridSize;
+            graphDimensions = graphManagerScript.graphDimensions;
+            boxSize = graphManagerScript.boxSize;
+            boxCenter = graphManagerScript.boxCenter;
         }
+
+        lastUpdate = graphManagerScript.update;
 
         if (!hasManager)
         {
