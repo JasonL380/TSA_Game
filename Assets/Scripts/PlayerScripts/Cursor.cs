@@ -22,9 +22,12 @@ namespace Utils.PlayerScripts
         public Vector2 offset;
         public int borderW;
         public int borderH;
-
+       
+        
         [Tooltip("The amount of time that it takes for this to move one tile")]
-        public float speed = 0.5f;
+        public float speed = 0.125f;
+        [Tooltip("The time that the movement animation takes as a fraction of the movement time")]
+        public float animationTime = 0.5f;
         
         private Material _defaultMaterial;
         private Sprite _defaultSprite;
@@ -103,7 +106,7 @@ namespace Utils.PlayerScripts
 
         private void Update()
         {
-            transform.position = Vector2.SmoothDamp(transform.position, smoothingTarget, ref velocity, speed/2);
+            transform.position = Vector2.SmoothDamp(transform.position, smoothingTarget, ref velocity, speed * animationTime);
         }
 
         public void OnCursor(InputAction.CallbackContext value)
