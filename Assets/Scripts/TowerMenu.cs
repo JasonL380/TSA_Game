@@ -1,20 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public class TowerMenu : MonoBehaviour
 {
     public GameObject Menu;
-    public GameObject Cursor;
+    public Utils.PlayerScripts.Cursor cursor;
 
     public bool IsOpen = false;
+
     // Start is called before the first frame update
     void Start()
     {
         //Menu = GetComponent<GameObject>();
         Menu.SetActive(false);
         IsOpen = false;
+        //cursor = GetComponent<Utils.PlayerScripts.Cursor>();
     }
 
     // Update is called once per frame
@@ -35,12 +38,14 @@ public class TowerMenu : MonoBehaviour
     }
     void OpenMenu()
     {
-        Cursor.SetActive(false);
+        cursor.movementEnabled = false;
         Menu.SetActive(true);
+        IsOpen = true;
     }
     void CloseMenu()
     {
-        Cursor.SetActive(true);
+        cursor.movementEnabled = true;
         Menu.SetActive(false);
+        IsOpen = false;
     }
 }

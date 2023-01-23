@@ -35,7 +35,8 @@ namespace Utils.PlayerScripts
         public Vector2 input;
         private Vector2 velocity = Vector2.zero;
         private Vector2 smoothingTarget;
-
+        public bool movementEnabled = true;
+        
         private void Start()
         {
             _turretGrid = (TurretGrid) FindObjectOfType(typeof(TurretGrid));
@@ -61,39 +62,42 @@ namespace Utils.PlayerScripts
                 movementCooldown -= Time.deltaTime;
             }
             //update the position
-            Vector2 movement = Vector2.zero;
-            if (movementCooldown <= 0)
+            if (movementEnabled)
             {
-                if (Math.Abs(input.x) > Math.Abs(input.y))
+                Vector2 movement = Vector2.zero;
+                if (movementCooldown <= 0)
                 {
-                    if (input.x > 0)
+                    if (Math.Abs(input.x) > Math.Abs(input.y))
                     {
-                        movement.x += _turretGrid.gridSize.x;
+                        if (input.x > 0)
+                        {
+                            movement.x += _turretGrid.gridSize.x;
+                        }
+                        else
+                        {
+                            movement.x -= _turretGrid.gridSize.x;
+                        }
                     }
-                    else
+                    else if (Math.Abs(input.y) > Math.Abs(input.x))
                     {
-                        movement.x -= _turretGrid.gridSize.x;
+                        if (input.y > 0)
+                        {
+                            movement.y += _turretGrid.gridSize.y;
+                        }
+                        else
+                        {
+                            movement.y -= _turretGrid.gridSize.y;
+                        }
                     }
-                }
-                else if (Math.Abs(input.y) > Math.Abs(input.x))
-                {
-                    if (input.y > 0)
-                    {
-                        movement.y += _turretGrid.gridSize.y;
-                    }
-                    else
-                    {
-                        movement.y -= _turretGrid.gridSize.y;
-                    }
-                }
             
-                if(borders.Contains(currentPos + movement))
-                {
-                    currentPos += movement;
-                    UpdatePosition(true);
-                }
+                    if(borders.Contains(currentPos + movement))
+                    {
+                        currentPos += movement;
+                        UpdatePosition(true);
+                    }
 
-                movementCooldown = speed;
+                    movementCooldown = speed;
+                }
             }
         }
 
@@ -188,7 +192,7 @@ namespace Utils.PlayerScripts
         }
 
         //secondary click, this will unselect the tower
-        private void OnSecondaryClick(InputAction.CallbackContext value)
+        public void OnSecondaryClick(InputAction.CallbackContext value)
         {
             _selectManager.disablePurchase();
             _spriteRenderer.material = _defaultMaterial;
