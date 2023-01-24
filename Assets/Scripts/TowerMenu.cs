@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 
 public class TowerMenu : MonoBehaviour
 {
     public GameObject Menu;
+    public GameObject OpenButton;
     public Utils.PlayerScripts.Cursor cursor;
 
     public bool IsOpen = false;
@@ -33,13 +35,15 @@ public class TowerMenu : MonoBehaviour
         }
         else if(IsOpen == false)
         {
-            OpenMenu();
+            OpenMenu(OpenButton);
         }
     }
-    void OpenMenu()
+    void OpenMenu(GameObject OpenButton)
     {
         cursor.movementEnabled = false;
         Menu.SetActive(true);
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(OpenButton);
         IsOpen = true;
     }
     void CloseMenu()
