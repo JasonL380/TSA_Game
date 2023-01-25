@@ -400,6 +400,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   autoWaves: 0
+  howManyWaves: 0
   player1SpawnPoints:
   - {x: -8.4, y: 8.7}
   - {x: -12, y: 8.7}
@@ -412,6 +413,7 @@ MonoBehaviour:
   - {x: -8.4, y: -8.7}
   player2EndPoints:
   - {x: 8.4, y: -8.7}
+  waveCount: 0
   BasicEnemy: {fileID: 566563747614171943, guid: 641194c5ab288284c939e988185f5eb8, type: 3}
   FastEnemy: {fileID: 566563747614171943, guid: adacf6584fa53b946a2cf2ea9cd82b8a, type: 3}
   DuplicateEnemy: {fileID: 566563747614171943, guid: 4ce93953566ab264ebb842734d5904ab, type: 3}
@@ -445,7 +447,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 502371594889145523}
   m_Father: {fileID: 502371595590606671}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -853,7 +856,7 @@ RectTransform:
   m_Children:
   - {fileID: 502371594539673586}
   m_Father: {fileID: 502371595202497743}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1117,12 +1120,12 @@ RectTransform:
   m_GameObject: {fileID: 502371594889145524}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 502371595368076407}
-  m_Father: {fileID: 502371595202497743}
-  m_RootOrder: 3
+  m_Father: {fileID: 502371594490661596}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1368,7 +1371,6 @@ RectTransform:
   - {fileID: 502371594838353320}
   - {fileID: 502371594522008180}
   - {fileID: 502371595590606671}
-  - {fileID: 502371594889145523}
   - {fileID: 502371594574703867}
   m_Father: {fileID: 502371594454153809}
   m_RootOrder: 5

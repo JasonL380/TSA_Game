@@ -9,6 +9,8 @@ public class TowerMenu : MonoBehaviour
 {
     public GameObject Menu;
     public GameObject OpenButton;
+    public GameObject CloseMenues;
+    public GameObject OpenMenues;
     public Utils.PlayerScripts.Cursor cursor;
 
     public bool IsOpen = false;
@@ -44,6 +46,8 @@ public class TowerMenu : MonoBehaviour
         Menu.SetActive(true);
         EventSystem.current.SetSelectedGameObject(null);
         EventSystem.current.SetSelectedGameObject(OpenButton);
+        OpenMenues.SetActive(true);
+        CloseMenues.SetActive(false);
         IsOpen = true;
     }
     void CloseMenu()
