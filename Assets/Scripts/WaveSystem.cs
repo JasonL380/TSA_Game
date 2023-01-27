@@ -65,8 +65,7 @@ public class WaveSystem : MonoBehaviour
 
     public void spawnEnemyButton(GameObject enemy)
     {
-        Instantiate(enemy, player1SpawnPoints[1], Quaternion.identity);
-        Instantiate(enemy, player2SpawnPoints[1], Quaternion.identity);
+        spawnEnemy(enemy);
     }
 
     // Update is called once per frame

@@ -1,7 +1,5 @@
 /*
- * zak baydass
  * 10/28/2022
- * ths script doesnt get used, health system was reworked.
  */
 
 using System.Collections;
@@ -20,17 +18,14 @@ public class Health : MonoBehaviour
     public bool destroyAtZero = true;
     public Slider HealthBarSlider;
     public int damageTaken;
-
-    [SerializeField]
-    private Transform[] PlayerSpawns;
+    public int genSouls;
+    public int specSouls;
+    public int money;
 
     public GameManager manager;
 
-    public int playerNum;
-    int PlayerIndex;
     private void Start()
     {
-        PlayerIndex = playerNum;
         manager = FindObjectOfType<GameManager>();
     }
     private void FixedUpdate()
@@ -60,14 +55,5 @@ public class Health : MonoBehaviour
                     Destroy(gameObject);
                 }
             }
-        }
-    public void Respawn()
-    {
-        //gameObject.transform.position = (LevelInitializer.PlayerSpawns[1].position);
-        currentHealth = maxHealth;
-        HealthBarSlider.value = currentHealth;
-        transform.position = (PlayerSpawns[Random.Range(0, PlayerSpawns.Length)].position);    
-        manager.GetComponent<GameManager>();
-        manager.LosePoint(playerNum);
     }
 }
