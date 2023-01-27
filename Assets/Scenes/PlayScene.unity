@@ -132,7 +132,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3879247847925368173, guid: 4790e8c1727dd7a408d61e71baa90a1b, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3879247847925368173, guid: 4790e8c1727dd7a408d61e71baa90a1b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -177,6 +177,10 @@ PrefabInstance:
     - target: {fileID: 7732717434963787512, guid: 4790e8c1727dd7a408d61e71baa90a1b, type: 3}
       propertyPath: m_Name
       value: Player Spawn (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732717434963787512, guid: 4790e8c1727dd7a408d61e71baa90a1b, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4790e8c1727dd7a408d61e71baa90a1b, type: 3}
@@ -278,7 +282,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3879247847925368173, guid: 4790e8c1727dd7a408d61e71baa90a1b, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3879247847925368173, guid: 4790e8c1727dd7a408d61e71baa90a1b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -323,6 +327,10 @@ PrefabInstance:
     - target: {fileID: 7732717434963787512, guid: 4790e8c1727dd7a408d61e71baa90a1b, type: 3}
       propertyPath: m_Name
       value: Player Spawn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732717434963787512, guid: 4790e8c1727dd7a408d61e71baa90a1b, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4790e8c1727dd7a408d61e71baa90a1b, type: 3}
@@ -649,6 +657,10 @@ MonoBehaviour:
   - {fileID: 676713444}
   playerPrefab: {fileID: 3245067018236726182, guid: 73c6919109a991f0e98b3b4f4a4aa0e5, type: 3}
   PlayerNum: 0
+  MaxPlayer: 2
+  PlayerList:
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1653873709
 MonoBehaviour:
   m_ObjectHideFlags: 0

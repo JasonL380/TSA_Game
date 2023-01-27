@@ -17,16 +17,20 @@ public class LevelInitializer : MonoBehaviour
     public int MaxPlayer = 2;
 
     public GameObject[] PlayerList = new GameObject[2];
+
+    LayerMask layerMask;
     
     // Start is called before the first frame update
     void Awake()
     {
         var playerConfigs = PlayerConfigurationManager.Instance.GetPlayerConfigs().ToArray();
+        
         for (int i = 0; i < playerConfigs.Length; i++)
         {
             PlayerNum++;
+            layerMask = PlayerSpawns[i].gameObject.layer;
             var player = Instantiate(playerPrefab, PlayerSpawns[i].position, PlayerSpawns[i].rotation, gameObject.transform);
-            player.GetComponent<PlayerInputHandler>().InitializePlayer(playerConfigs[i], PlayerNum);
+            player.GetComponent<PlayerInputHandler>().InitializePlayer(playerConfigs[i], PlayerNum, layerMask);
             player.GetComponentInChildren<Utils.PlayerScripts.Cursor>().side = i;
             PlayerList[i] = player;
         }
