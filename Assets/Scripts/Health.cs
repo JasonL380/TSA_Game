@@ -1,5 +1,5 @@
 /*
- * 10/28/2022
+ * General script, not just for health
  */
 
 using System.Collections;

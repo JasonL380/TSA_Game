@@ -177,10 +177,12 @@ public class WaveSystem : MonoBehaviour
     {
         int spawn = randNum();
         GameObject newEnemy = Instantiate(enemy, player1SpawnPoints[spawn], Quaternion.identity);
+        newEnemy.layer = GetComponent<LevelInitializer>().PlayerList[0].layer;
         Pathfinder pathfinder = newEnemy.GetComponent<Pathfinder>();
         pathfinder.waypoints[0] = player1EndPoints[spawn];
 
         newEnemy = Instantiate(enemy, player2SpawnPoints[spawn], Quaternion.identity);
+        newEnemy.layer = GetComponent<LevelInitializer>().PlayerList[1].layer;
         pathfinder = newEnemy.GetComponent<Pathfinder>();
         pathfinder.waypoints[0] = player2EndPoints[spawn];
     }
