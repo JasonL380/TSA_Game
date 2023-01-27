@@ -13,6 +13,10 @@ public class LevelInitializer : MonoBehaviour
     [SerializeField]
     private GameObject playerPrefab;
     public int PlayerNum = 0;
+
+    public int MaxPlayer = 2;
+
+    public GameObject[] PlayerList = new GameObject[2];
     
     // Start is called before the first frame update
     void Awake()
@@ -24,7 +28,9 @@ public class LevelInitializer : MonoBehaviour
             var player = Instantiate(playerPrefab, PlayerSpawns[i].position, PlayerSpawns[i].rotation, gameObject.transform);
             player.GetComponent<PlayerInputHandler>().InitializePlayer(playerConfigs[i], PlayerNum);
             player.GetComponentInChildren<Utils.PlayerScripts.Cursor>().side = i;
+            PlayerList[i] = player;
         }
         
     }
+
 }
