@@ -26,12 +26,7 @@ public class Turret : MonoBehaviour
     public float range;
 
     private GameObject currentTarget;
-    private float currentFireTime;
-
-    private void Start()
-    {
-        currentFireTime = 0;
-    }
+    private float currentFireTime = 0;
 
     private void FixedUpdate()
     {
