@@ -149,6 +149,7 @@ MonoBehaviour:
   boxSize: {x: 28, y: 31}
   nodeDensity: 1
   graphManager: {fileID: 0}
+  hasManager: 0
 --- !u!114 &3936394250081713675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,9 +167,10 @@ MonoBehaviour:
   destroyAtZero: 1
   HealthBarSlider: {fileID: 0}
   damageTaken: 0
-  PlayerSpawns: []
+  genSouls: 1
+  specSouls: 2
+  money: 5
   manager: {fileID: 0}
-  playerNum: 0
 --- !u!114 &-1872432172663706146
 MonoBehaviour:
   m_ObjectHideFlags: 0

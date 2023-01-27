@@ -5266,7 +5266,7 @@ MonoBehaviour:
   borderW: -1
   borderH: 0
   speed: 0.25
-  animationTime: 0.5
+  animationTime: 0.25
   input: {x: 0, y: 0}
   movementEnabled: 1
 --- !u!114 &1646160787711671484
