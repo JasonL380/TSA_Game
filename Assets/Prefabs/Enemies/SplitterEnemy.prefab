@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: -6153713776272668310}
   m_Layer: 6
   m_Name: SplitterEnemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -150,6 +150,7 @@ MonoBehaviour:
   boxSize: {x: 28, y: 31}
   nodeDensity: 1
   graphManager: {fileID: 0}
+  hasManager: 0
 --- !u!114 &3936394250081713675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -167,9 +168,10 @@ MonoBehaviour:
   destroyAtZero: 1
   HealthBarSlider: {fileID: 0}
   damageTaken: 0
-  PlayerSpawns: []
+  genSouls: 0
+  specSouls: 0
+  money: 0
   manager: {fileID: 0}
-  playerNum: 0
 --- !u!114 &-2750398899643242660
 MonoBehaviour:
   m_ObjectHideFlags: 0
