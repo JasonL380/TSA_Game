@@ -14,14 +14,17 @@ public class PlayerInputHandler : MonoBehaviour
 
     private PlayerControls controls;
 
-    private void Awake()
+    public int PlayerNum;
+
+    private void Start()
     {
         controls = new PlayerControls();
     }
 
-    public void InitializePlayer(PlayerConfiguration config)
+    public void InitializePlayer(PlayerConfiguration config, int playerNum)
     {
         playerConfig = config;
+        PlayerNum = playerNum;
     }   
 
 

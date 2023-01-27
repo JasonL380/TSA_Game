@@ -1846,7 +1846,7 @@ MonoBehaviour:
   m_FirstSelected: {fileID: 6725194245209249784}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
-  m_PlayerRoot: {fileID: 3245067018236726182}
+  m_PlayerRoot: {fileID: 8008253568894146281}
 --- !u!114 &3924203024684645461
 MonoBehaviour:
   m_ObjectHideFlags: 0
