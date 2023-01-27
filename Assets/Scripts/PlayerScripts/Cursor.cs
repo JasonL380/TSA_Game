@@ -111,6 +111,10 @@ namespace Utils.PlayerScripts
 
         public void OnCursor(InputAction.CallbackContext value)
         {
+            if (input == Vector2.zero)
+            {
+                movementCooldown = 0;
+            }
             input = value.ReadValue<Vector2>();
            /* input = val;
             Vector2 movement = Vector2.zero;
