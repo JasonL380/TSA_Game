@@ -18,17 +18,20 @@ public class PlayerInputHandler : MonoBehaviour
 
     public GameObject player;
 
+    public LayerMask LayerMask1;
+    public LayerMask LayerMask2;
+
     private void Start()
     {
         controls = new PlayerControls();
         player = gameObject; 
     }
 
-    public void InitializePlayer(PlayerConfiguration config, int playerNum, LayerMask Layer)
+    public void InitializePlayer(PlayerConfiguration config, int playerNum, LayerMask layer)
     {
         playerConfig = config;
         PlayerNum = playerNum;
-        player.layer = Layer;
+        player.layer = layer;
     }   
 
 
