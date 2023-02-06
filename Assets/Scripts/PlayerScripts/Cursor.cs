@@ -22,7 +22,7 @@ namespace Utils.PlayerScripts
         public Vector2 offset;
         public int borderW;
         public int borderH;
-       
+        public MoneyManager moneyManager;
         
         [Tooltip("The amount of time that it takes for this to move one tile")]
         public float speed = 0.125f;
@@ -158,7 +158,7 @@ namespace Utils.PlayerScripts
             if (_selectManager.purchaseState())
             {
                 print("placing tower");
-                _turretGrid.PlaceObjectAtPosition(_selectManager.purchaseObject(), transform.position, 0);
+                _turretGrid.PlaceObjectAtPosition(_selectManager.purchaseObject(), transform.position, 0, moneyManager);
             }
         }
 

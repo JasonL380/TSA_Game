@@ -17,8 +17,6 @@ public class TurretGrid : MonoBehaviour
 
     public PathfinderGraphManager manager;
 
-    public MoneyManager moneyManager;
-    
     //public Vector2 pos;
     //public GameObject turretPrefab;
 
@@ -76,7 +74,7 @@ public class TurretGrid : MonoBehaviour
     /// <param name="position">The position, this will be adjusted to the grid</param>
     /// <param name="layer">The layer that the object should be placed on</param>
     /// <returns>True if placement was successful, false if placement was unsuccessful</returns>
-    public bool PlaceObjectAtPosition(GameObject prefab, Vector2 position, int layer)
+    public bool PlaceObjectAtPosition(GameObject prefab, Vector2 position, int layer, MoneyManager moneyManager)
     {
         if (moneyManager.SubMoney(prefab.GetComponent<Turret>().cost))
         {

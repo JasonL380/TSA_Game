@@ -19,7 +19,7 @@ public class DamageOnCollide : MonoBehaviour
         Health health = collision.gameObject.GetComponent<Health>();
         if(health != null)
         {
-            health.takeDamage(damageAmount);
+            health.takeDamage(damageAmount, null);
         }
         if (DestroyOnCollide)
         {
@@ -36,7 +36,7 @@ public class DamageOnCollide : MonoBehaviour
         Health health = collision.GetComponent<Health>();
         if (health != null)
         {
-            health.takeDamage(damageAmount);
+            health.takeDamage(damageAmount, null);
 
         }
         if (DestroyOnCollide)

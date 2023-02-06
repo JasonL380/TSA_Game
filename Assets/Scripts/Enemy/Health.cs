@@ -2,6 +2,7 @@
  * General script, not just for health
  */
 
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -40,7 +41,10 @@ public class Health : MonoBehaviour
         if (currentHealth <= 0)
         {
             //add souls/money
-            turret.moneyManager.AddMoney(money);
+            if (turret != null)
+            {
+                turret.moneyManager.AddMoney(money);
+            }
             
             //run death things here
             DeathEffects deathEffects = GetComponent<DeathEffects>();

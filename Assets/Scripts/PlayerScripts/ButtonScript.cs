@@ -42,7 +42,7 @@ public class ButtonScript : MonoBehaviour
     {
         //TODO add confirm button before selecting
         print(tower + " " + position + " " + layer);
-        turretGrid.PlaceObjectAtPosition(tower, position, layer);
+        //turretGrid.PlaceObjectAtPosition(tower, position, layer);
         Debug.Log("tower placed at" + position.x + "by" + position.y);
     }
 
