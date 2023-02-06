@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 502371593693155584}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 14, z: 0}
-  m_LocalScale: {x: 2.5, y: 54.5, z: 1}
+  m_LocalScale: {x: 2, y: 54.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 502371594454153809}
@@ -299,21 +299,21 @@ MonoBehaviour:
   autoWaves: 0
   howManyWaves: 0
   player1SpawnPoints:
-  - {x: 0, y: 7}
+  - {x: 0, y: 4.2}
   - {x: 0, y: 0}
-  - {x: 0, y: -7}
+  - {x: 0, y: -4.2}
   player2SpawnPoints:
-  - {x: 0, y: 7}
+  - {x: 0, y: 4.2}
   - {x: 0, y: 0}
-  - {x: 0, y: -7}
+  - {x: 0, y: -4.2}
   player1EndPoints:
-  - {x: -26, y: 7}
-  - {x: -26, y: 0}
-  - {x: -26, y: -7}
+  - {x: -15.6, y: 4.2}
+  - {x: -15.6, y: 0}
+  - {x: -15.6, y: -4.2}
   player2EndPoints:
-  - {x: 26, y: 7}
-  - {x: 26, y: 0}
-  - {x: 26, y: -7}
+  - {x: 15.6, y: 4.2}
+  - {x: 15.6, y: 0}
+  - {x: 15.6, y: -4.2}
   waveCount: 0
   BasicEnemy: {fileID: 566563747614171943, guid: 641194c5ab288284c939e988185f5eb8, type: 3}
   FastEnemy: {fileID: 566563747614171943, guid: adacf6584fa53b946a2cf2ea9cd82b8a, type: 3}
@@ -1833,7 +1833,7 @@ Transform:
   m_GameObject: {fileID: 6518318970546567555}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: -14, z: 0}
-  m_LocalScale: {x: 2.5, y: 54.5, z: 1}
+  m_LocalScale: {x: 2, y: 54.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 502371594454153809}
