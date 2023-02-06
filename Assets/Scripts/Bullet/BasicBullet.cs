@@ -9,15 +9,18 @@ namespace Utils.Bullet
     public class BasicBullet : MonoBehaviour
     {
         //the turret that shot this bullet
-        public GameObject turret;
+        public Turret turret;
         public LayerMask targetLayers;
         public int damage;
         
-        //runs on collision with an object
+        /// <summary>
+        /// Runs on collision with an object
+        /// </summary>
+        /// <param name="collision">The collider that the bullet collided with</param>
         public virtual void OnCollide(Collider2D collision)
         {
             //TODO: add souls to something
-            collision.gameObject.GetComponent<Health>().takeDamage(damage);
+            collision.gameObject.GetComponent<Health>().takeDamage(damage, turret);
         }
 
         private void OnCollisionEnter2D(Collision2D col)

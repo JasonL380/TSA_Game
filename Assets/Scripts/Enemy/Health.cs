@@ -2,6 +2,7 @@
  * General script, not just for health
  */
 
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -28,32 +29,38 @@ public class Health : MonoBehaviour
     {
         manager = FindObjectOfType<GameManager>();
     }
-    private void FixedUpdate()
+    
+    /// <summary>
+    /// Take a specified amount of damage from a specified turret
+    /// </summary>
+    /// <param name="damage">The amount of damage to do</param>
+    /// <param name="turret">The turret that damage is being taken from</param>
+    public void takeDamage(int damage, Turret turret) //deals damage based on getting a collision from a bullet
     {
-      //  HealthBarSlider.value = currentHealth; //sets health bar slider to the current health always
-      //  HealthBarSlider.maxValue = maxHealth;
-
-    }
-    public void takeDamage(int damage) //deals damage based on getting a collision from a bullet
+        currentHealth -= damage; //takes damage from a value
+        if (currentHealth <= 0)
         {
-            currentHealth -= damage; //takes damage from a value
-            if (currentHealth <= 0)
+            //add souls/money
+            if (turret != null)
             {
-                //run death things here
-                DeathEffects deathEffects = GetComponent<DeathEffects>();
+                turret.moneyManager.AddMoney(money);
+            }
+            
+            //run death things here
+            DeathEffects deathEffects = GetComponent<DeathEffects>();
+            if (deathEffects != null)
+            {
+                deathEffects.deathEvent.Invoke();
+            }
+            if (destroyAtZero) 
+            {
+                deathEffects = GetComponent<DeathEffects>();
                 if (deathEffects != null)
                 {
                     deathEffects.deathEvent.Invoke();
                 }
-                if (destroyAtZero) 
-                {
-                    deathEffects = GetComponent<DeathEffects>();
-                    if (deathEffects != null)
-                    {
-                        deathEffects.deathEvent.Invoke();
-                    }
-                    Destroy(gameObject);
-                }
+                Destroy(gameObject);
             }
+        }
     }
 }

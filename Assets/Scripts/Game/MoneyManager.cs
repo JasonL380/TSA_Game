@@ -14,20 +14,30 @@ public class MoneyManager : MonoBehaviour
     {
         money = 20;
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        mTMP.text = "Money: " + money;
-    }
-
-    void addMoney(int value)
+    /// <summary>
+    /// Add money to the current total
+    /// </summary>
+    /// <param name="value">The amount of money to add</param>
+    public void AddMoney(int value)
     {
         money += value;
+        mTMP.text = "Money: " + money;
     }
-
-    void subMoney(int value)
+    
+    /// <summary>
+    /// Subtract money from the current total
+    /// </summary>
+    /// <param name="value">The amount of money that should be subtracted</param>
+    /// <returns>A bool saying if money was able to be subtracted</returns>
+    public bool SubMoney(int value)
     {
+        if (value > money)
+        {
+            return false;
+        }
         money -= value;
+        mTMP.text = "Money: " + money;
+        
+        return true;
     }
 }

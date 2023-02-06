@@ -5273,6 +5273,7 @@ MonoBehaviour:
   offset: {x: 8, y: 1}
   borderW: -1
   borderH: 0
+  moneyManager: {fileID: 2150518844194737146}
   speed: 0.25
   animationTime: 0.25
   input: {x: 0, y: 0}

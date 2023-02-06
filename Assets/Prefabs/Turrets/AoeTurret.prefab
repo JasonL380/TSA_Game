@@ -102,7 +102,7 @@ MonoBehaviour:
   targetLayers:
     serializedVersion: 2
     m_Bits: 64
-  bullet: {fileID: 6218950624554181667, guid: 33aa0bc3e0bf1a776981af0ef865ee11, type: 3}
+  bullet: {fileID: 1194056663152717531, guid: d8e22091a0bd6eb6c819fa7906d598d6, type: 3}
   bulletSpeed: 5
   fireEvent:
     m_PersistentCalls:
@@ -126,9 +126,10 @@ MonoBehaviour:
   destroyAtZero: 1
   HealthBarSlider: {fileID: 0}
   damageTaken: 0
-  PlayerSpawns: []
+  genSouls: 0
+  specSouls: 0
+  money: 0
   manager: {fileID: 0}
-  playerNum: 0
 --- !u!61 &-6226174095971330088
 BoxCollider2D:
   m_ObjectHideFlags: 0
