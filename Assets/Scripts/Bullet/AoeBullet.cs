@@ -22,7 +22,7 @@ namespace Utils.Bullet
                 Health health = gameObject.GetComponent<Health>();
                 if (health != null)
                 {
-                    health.takeDamage(damage);
+                    health.takeDamage(damage, turret);
                 }
             }
         }

@@ -109,6 +109,11 @@ namespace Utils.PlayerScripts
             transform.position = Vector2.SmoothDamp(transform.position, smoothingTarget, ref velocity, speed * animationTime);
         }
 
+        
+        /// <summary>
+        /// Called whenever the analog stick position changed
+        /// </summary>
+        /// <param name="value">The new input value</param>
         public void OnCursor(InputAction.CallbackContext value)
         {
             if (input == Vector2.zero)
@@ -116,51 +121,6 @@ namespace Utils.PlayerScripts
                 movementCooldown = 0;
             }
             input = value.ReadValue<Vector2>();
-           /* input = val;
-            Vector2 movement = Vector2.zero;
-            if (movementCooldown <= 0)
-            {
-                if (Math.Abs(val.x) > Math.Abs(val.y))
-                {
-                    if (val.x > 0)
-                    {
-                        movement.x += _turretGrid.gridSize.x;
-                    }
-                    else
-                    {
-                        movement.x -= _turretGrid.gridSize.x;
-                    }
-                }
-                else if (Math.Abs(val.y) > Math.Abs(val.x))
-                {
-                    if (val.y > 0)
-                    {
-                        movement.y += _turretGrid.gridSize.y;
-                    }
-                    else
-                    {
-                        movement.y -= _turretGrid.gridSize.y;
-                    }
-                }
-            
-                if(borders.Contains(currentPos + movement))
-                {
-                    currentPos += movement;
-                    UpdatePosition();
-                }
-
-                movementCooldown = speed;
-            }
-            
-                
-            
-            /*if (borders.Contains(currentPos + val * sensitivity))
-            {
-                val.
-                lastPos = currentPos;
-                currentPos += val * sensitivity;
-                UpdatePosition();
-            }*/
         }
 
         /*
@@ -170,6 +130,10 @@ namespace Utils.PlayerScripts
             UpdatePosition();
         }*/
 
+        /// <summary>
+        /// Called when the primary button is pressed, this will attempt to place a tower at the selected position
+        /// </summary>
+        /// <param name="value">The input value, unused</param>
         public void OnClick(InputAction.CallbackContext value)
         {
             //check if a purchasable object is selected
@@ -199,6 +163,11 @@ namespace Utils.PlayerScripts
         }
 
         //secondary click, this will unselect the tower
+        
+        /// <summary>
+        /// Called when the secondary button is pressed, this will unselect the tower
+        /// </summary>
+        /// <param name="value">The input value, unused</param>
         public void OnSecondaryClick(InputAction.CallbackContext value)
         {
             _selectManager.disablePurchase();
@@ -206,6 +175,10 @@ namespace Utils.PlayerScripts
             _spriteRenderer.sprite = _defaultSprite;
         }
         
+        /// <summary>
+        /// Update the current cursor position
+        /// </summary>
+        /// <param name="smooth">Boolean for if motion should be smoothed</param>
         private void UpdatePosition(bool smooth)
         {
             Vector2 pos = _turretGrid.GetGridPosition(currentPos);
@@ -219,7 +192,10 @@ namespace Utils.PlayerScripts
             }
         }
         
-        //determine the main camera's rect because unity won't do this for me
+        /// <summary>
+        /// Determine the camera's visible area
+        /// </summary>
+        /// <returns>A rect containing the camera's visible area</returns>
         private Rect _calculateCameraRect()
         {
             Rect rect = new Rect();

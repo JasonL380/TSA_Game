@@ -16,6 +16,8 @@ public class TurretGrid : MonoBehaviour
     public LayerMask obstacleLayerMask;
 
     public PathfinderGraphManager manager;
+
+    public MoneyManager moneyManager;
     
     //public Vector2 pos;
     //public GameObject turretPrefab;
@@ -76,28 +78,34 @@ public class TurretGrid : MonoBehaviour
     /// <returns>True if placement was successful, false if placement was unsuccessful</returns>
     public bool PlaceObjectAtPosition(GameObject prefab, Vector2 position, int layer)
     {
-        Vector2 gridPos = GetGridPosition(position);
-        
-        //check if there is already a turret at this position
-        if (_turretMap.ContainsKey(gridPos))
+        if (moneyManager.SubMoney(prefab.GetComponent<Turret>().cost))
         {
-            return false;
-        }
+            Vector2 gridPos = GetGridPosition(position);
         
-        //check if there are any obstacles in this area
-        Collider2D obstacle = Physics2D.OverlapBox(position, gridSize, 0, obstacleLayerMask);
-        if (obstacle != null)
-        {
-            return false;
+            //check if there is already a turret at this position
+            if (_turretMap.ContainsKey(gridPos))
+            {
+                return false;
+            }
+        
+            //check if there are any obstacles in this area
+            Collider2D obstacle = Physics2D.OverlapBox(position, gridSize, 0, obstacleLayerMask);
+            if (obstacle != null)
+            {
+                return false;
+            }
+
+            GameObject turret = Instantiate(prefab, gridPos, Quaternion.identity);
+            turret.GetComponent<Turret>().moneyManager = moneyManager;
+            turret.layer = layer;
+            _turretMap[gridPos] = turret;
+        
+            manager.UpdateGraph(gridPos - gridSize, gridPos + gridSize);
+        
+            return true;
         }
 
-        GameObject turret = Instantiate(prefab, gridPos, Quaternion.identity);
-        turret.layer = layer;
-        _turretMap[gridPos] = turret;
-        
-        manager.UpdateGraph(gridPos - gridSize, gridPos + gridSize);
-        
-        return true;
+        return false;
     }
 
     /// <summary>

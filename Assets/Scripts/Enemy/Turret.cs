@@ -6,6 +6,7 @@ using System;
 using System.Numerics;
 using UnityEngine;
 using UnityEngine.Events;
+using Utils.Bullet;
 using Quaternion = UnityEngine.Quaternion;
 using Vector3 = UnityEngine.Vector3;
 
@@ -25,6 +26,9 @@ public class Turret : MonoBehaviour
     [Tooltip("The range of this turret")] 
     public float range;
 
+    public MoneyManager moneyManager;
+    public int cost = 10;
+    
     private GameObject currentTarget;
     private float currentFireTime = 0;
 
@@ -55,7 +59,8 @@ public class Turret : MonoBehaviour
                     
                     //fire at the target
                     GameObject bullet2 = GameObject.Instantiate(bullet, transform.position, angle);
-
+                    bullet2.GetComponent<BasicBullet>().turret = this;
+                    
                     Rigidbody2D bulletRb2d = bullet2.GetComponent<Rigidbody2D>();
 
                     bulletRb2d.velocity = toTarget * bulletSpeed;
