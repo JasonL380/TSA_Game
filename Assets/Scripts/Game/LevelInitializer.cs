@@ -30,7 +30,7 @@ public class LevelInitializer : MonoBehaviour
             PlayerNum++;
             //layerMask = PlayerSpawns[i].gameObject.layer;
             var Pplayer = Instantiate(playerPrefab, PlayerSpawns[i].position, PlayerSpawns[i].rotation, gameObject.transform);
-            Pplayer.GetComponent<PlayerInputHandler>().InitializePlayer(playerConfigs[i], PlayerNum, PlayerSpawns[i].gameObject.layer);
+            Pplayer.GetComponent<PlayerInputHandler>().InitializePlayer(playerConfigs[i], PlayerNum , PlayerSpawns[i].gameObject.layer);
             Pplayer.GetComponentInChildren<Utils.PlayerScripts.Cursor>().side = i;
             PlayerList[i] = Pplayer;
         }

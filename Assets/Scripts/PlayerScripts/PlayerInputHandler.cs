@@ -27,7 +27,7 @@ public class PlayerInputHandler : MonoBehaviour
         player = gameObject; 
     }
 
-    public void InitializePlayer(PlayerConfiguration config, int playerNum, LayerMask layer)
+    public void InitializePlayer(PlayerConfiguration config, int playerNum, LayerMask layer )
     {
         playerConfig = config;
         PlayerNum = playerNum;
