@@ -372,6 +372,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 502371594454153810, guid: 7f8223f629969eb419ea9dbb70fea09e, type: 3}
+      propertyPath: waveCount
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 502371594454153810, guid: 7f8223f629969eb419ea9dbb70fea09e, type: 3}
       propertyPath: howManyWaves
       value: 999999
       objectReference: {fileID: 0}
