@@ -10,11 +10,13 @@ using static UnityEngine.GraphicsBuffer;
 
 public class EnemyReachGoal : MonoBehaviour
 {
-    PlayerHealth player;
+    PlayerHealth goal;
+    PlayerHealth goal2;
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
+        goal = GameObject.FindGameObjectWithTag("Goal").GetComponent<PlayerHealth>();
+        goal2 = GameObject.FindGameObjectWithTag("Goal2").GetComponent<PlayerHealth>();
     }
 
     // Update is called once per frame
@@ -27,7 +29,12 @@ public class EnemyReachGoal : MonoBehaviour
     {
         if (collision.gameObject.tag.Equals("Goal") == true)
         {
-            player.Damage();
+            goal.Damage();
+            Destroy(gameObject);
+        }
+        if (collision.gameObject.tag.Equals("Goal2") == true)
+        {
+            goal2.Damage();
             Destroy(gameObject);
         }
     }
@@ -36,7 +43,12 @@ public class EnemyReachGoal : MonoBehaviour
     {
         if (collision.gameObject.tag.Equals("Goal") == true)
         {
-            player.Damage();
+            goal.Damage();
+            Destroy(gameObject);
+        }
+        if (collision.gameObject.tag.Equals("Goal2") == true)
+        {
+            goal2.Damage();
             Destroy(gameObject);
         }
     }

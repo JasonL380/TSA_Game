@@ -4,6 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Enemy
+  - Goal1
+  - Goal2
   - Goal
   layers:
   - Default
