@@ -296,8 +296,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd904f199c3f081478e21037f0be266d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  autoWaves: 0
-  howManyWaves: 0
+  autoWaves: 1
+  howManyWaves: 1000
   player1SpawnPoints:
   - {x: 0, y: 4.2}
   - {x: 0, y: 0}

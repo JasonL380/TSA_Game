@@ -704,10 +704,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wallLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   displayDebug: 1
   pathfinderSize: 0
-  boxCenter: {x: 0, y: 0}
+  boxCenter: {x: 0.5, y: 0.5}
   boxSize: {x: 32, y: 18}
   nodeDensity: 1
   gridSize: {x: 0, y: 0}
