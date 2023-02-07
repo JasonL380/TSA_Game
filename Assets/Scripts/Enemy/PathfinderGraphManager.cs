@@ -188,6 +188,8 @@ namespace Utils
                         else
                         {
                             graph[x, y] = (short) (cost << 8 | 1);
+                            
+                            print("Graph Manager: Found a obstacle at " + x + ", " + y + "  graph data is " + graph[x, y] + " "+ (graph[x, y] & 0x1));
                         }
                     }
                 }
@@ -199,28 +201,28 @@ namespace Utils
                 for (int y = gridCorner1.y - 1; y < gridCorner2.y + 1; ++y)
                 {
                     //if there isn't a point here do nothing
-                    if (graph[x, y] != 0)
+                    if ((graph[x, y] & 0x1) == 1)
                     {
                         //right
-                        if (x + 1 < graphDimensions.x && (graph[x + 1, y] & 1) != 0)
+                        if (x + 1 < graphDimensions.x && (graph[x + 1, y] & 0x1) == 1)
                         {
                             graph[x, y] = Convert.ToInt16(1 << 4 | graph[x, y]);
                         }
 
                         //down
-                        if (y - 1 > -1 && (graph[x, y - 1] & 1) != 0)
+                        if (y - 1 > -1 && (graph[x, y - 1] & 0x1) == 1)
                         {
                             graph[x, y] = Convert.ToInt16(1 << 3 | graph[x, y]);
                         }
 
                         //left
-                        if (x - 1 > -1 && (graph[x - 1, y] & 1) != 0)
+                        if (x - 1 > -1 && (graph[x - 1, y] & 0x1) == 1)
                         {
                             graph[x, y] = Convert.ToInt16(1 << 2 | graph[x, y]);
                         }
 
                         //up
-                        if (y + 1 < graphDimensions.y && (graph[x, y + 1] & 1) != 0)
+                        if (y + 1 < graphDimensions.y && (graph[x, y + 1] & 0x1) == 1)
                         {
                             graph[x, y] = Convert.ToInt16(1 << 1 | graph[x, y]);
                         }
@@ -243,8 +245,8 @@ namespace Utils
             {
                 for (int y = 0; y < graphDimensions.y; ++y)
                 {
-                    
-                    if (graph[x, y] > 255)
+
+                    if (graph[x, y] >> 8 > 1)
                     {
                         Vector2 position = (gridSize * new Vector2(x, y)) + gridStart;
                         Debug.DrawLine(position, position - new Vector2(0, 0.1F), Color.green);
@@ -265,9 +267,9 @@ namespace Utils
 
         public Vector2Int actualToGrid(Vector2 actual)
         {
-            print(actual);
+            //print(actual);
             Vector2 grid = (actual - (boxCenter - (boxSize / 2))) / gridSize;
-            print(grid + ", " + gridSize);
+            //print(grid + ", " + gridSize);
             grid.x = Math.Min(Math.Max(grid.x, 0), graphDimensions.x - 1);
             grid.y = Math.Min(Math.Max(grid.y, 0), graphDimensions.y - 1);
             return new Vector2Int((int) grid.x, (int) grid.y);

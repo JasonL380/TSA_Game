@@ -307,13 +307,13 @@ MonoBehaviour:
   - {x: 0, y: 0}
   - {x: 0, y: -4.2}
   player1EndPoints:
-  - {x: -15.6, y: 4.2}
-  - {x: -15.6, y: 0}
-  - {x: -15.6, y: -4.2}
+  - {x: -16.2, y: 4.2}
+  - {x: -16.2, y: 0}
+  - {x: -16.2, y: -4.2}
   player2EndPoints:
-  - {x: 15.6, y: 4.2}
-  - {x: 15.6, y: 0}
-  - {x: 15.6, y: -4.2}
+  - {x: 16.2, y: 4.2}
+  - {x: 16.2, y: 0}
+  - {x: 16.2, y: -4.2}
   waveCount: 0
   BasicEnemy: {fileID: 566563747614171943, guid: 641194c5ab288284c939e988185f5eb8, type: 3}
   FastEnemy: {fileID: 566563747614171943, guid: adacf6584fa53b946a2cf2ea9cd82b8a, type: 3}

@@ -238,24 +238,24 @@ public class Pathfinder : MonoBehaviour
                     //if ((nextPoint & 1) != 0)
                     //{
                     float new_cost = cost_so_far[current] + (nextPoint >> 8);
-                        if (!cost_so_far.ContainsKey(next) || new_cost < cost_so_far[next])
+                    if (!cost_so_far.ContainsKey(next) || new_cost < cost_so_far[next])
+                    {
+                        if ((nextPoint >> 8) > 1)
                         {
-                            if ((nextPoint >> 8) > 1)
-                            {
-                                print("cost is " + (nextPoint >> 8));
-                            }
+                            print("Pathfinder: cost is " + (nextPoint >> 8));
+                        }
 
-                            cost_so_far[next] = new_cost;
+                        cost_so_far[next] = new_cost;
 
-                            queue.Enqueue(next, new_cost + heuristic(next, goal));
-                            cameFrom[next] = current;
-                            //print(((gridSize * next) - gridStart).ToString() + ", " + (gridSize * current) + gridStart);
-                            if (displayDebug)
-                            {
-                                Debug.DrawLine((gridSize * next) + gridStart, (gridSize * current) + gridStart,
-                                    Color.magenta, 30);
-                            }
-                        } 
+                        queue.Enqueue(next, new_cost + heuristic(next, goal));
+                        cameFrom[next] = current;
+                        //print(((gridSize * next) - gridStart).ToString() + ", " + (gridSize * current) + gridStart);
+                        if (displayDebug)
+                        {
+                            Debug.DrawLine((gridSize * next) + gridStart, (gridSize * current) + gridStart,
+                                Color.magenta, 30);
+                        }
+                    } 
                     //}
                 }
             }

@@ -9,10 +9,13 @@ public class MoneyManager : MonoBehaviour
     public int money;
 
     public TMP_Text mTMP;
+
+    public bool infiniteMoney = false;
     // Start is called before the first frame update
     void Start()
     {
         money = 20;
+        mTMP.text = "Money: " + money;
     }
     /// <summary>
     /// Add money to the current total
@@ -23,7 +26,7 @@ public class MoneyManager : MonoBehaviour
         money += value;
         mTMP.text = "Money: " + money;
     }
-    
+
     /// <summary>
     /// Subtract money from the current total
     /// </summary>
@@ -31,6 +34,11 @@ public class MoneyManager : MonoBehaviour
     /// <returns>A bool saying if money was able to be subtracted</returns>
     public bool SubMoney(int value)
     {
+        if (infiniteMoney)
+        {
+            return true;
+        }
+
         if (value > money)
         {
             return false;

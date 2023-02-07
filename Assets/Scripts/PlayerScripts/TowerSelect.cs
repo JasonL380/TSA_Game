@@ -26,6 +26,6 @@ public class TowerSelect : MonoBehaviour
     {
         //TODO add cost here
         selectManager.enablePurchase(TowerSelected, 0);
-        Debug.Log("tower Bought!");
+        print("tower Bought!");
     }
 }

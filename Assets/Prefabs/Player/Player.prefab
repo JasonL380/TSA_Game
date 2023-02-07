@@ -2024,6 +2024,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de69d46683fe7a7439a8a96a5cae2b50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cursor: {fileID: 5747943011240630064}
 --- !u!114 &3702448725234383765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2054,6 +2055,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   money: 0
   mTMP: {fileID: 1907108500247525142}
+  infiniteMoney: 1
 --- !u!114 &1459850463846322570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5278,6 +5280,9 @@ MonoBehaviour:
   animationTime: 0.25
   input: {x: 0, y: 0}
   movementEnabled: 1
+  placementLayer:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!114 &1646160787711671484
 MonoBehaviour:
   m_ObjectHideFlags: 0

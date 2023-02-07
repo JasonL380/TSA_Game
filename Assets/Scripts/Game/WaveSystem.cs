@@ -188,7 +188,7 @@ public class WaveSystem : MonoBehaviour
     int randNum()
     {
         int r = rand.Next(player1SpawnPoints.Length);
-        Debug.Log(r);
+        //Debug.Log(r);
         while(r == prevSpawn)
         {
             r = rand.Next(player1SpawnPoints.Length);
