@@ -101,6 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03522b55f13a7754c98ab06941cca15c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxPlayers: 1
+  playerConfigs: []
+  MaxPlayers: 2
   playerInputManager: {fileID: 0}
   SceneChangeName: SampleScene

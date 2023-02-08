@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class OpenMenu : MonoBehaviour
 {
     public GameObject FirstSelected;
-    private void OnEnable()
+    private void enable()
     {
         EventSystem.current.SetSelectedGameObject(null);
         EventSystem.current.SetSelectedGameObject(FirstSelected);
