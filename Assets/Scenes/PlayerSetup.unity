@@ -134,7 +134,6 @@ GameObject:
   - component: {fileID: 69782388}
   - component: {fileID: 69782387}
   - component: {fileID: 69782386}
-  - component: {fileID: 69782389}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -208,18 +207,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &69782389
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 69782385}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5edfc440ab01abc4498c95d61efe95ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &242400958
 GameObject:
   m_ObjectHideFlags: 0
@@ -462,6 +449,7 @@ GameObject:
   - component: {fileID: 1457932976}
   - component: {fileID: 1457932975}
   - component: {fileID: 1457932977}
+  - component: {fileID: 1457932978}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -528,6 +516,18 @@ MonoBehaviour:
   m_TrackedDeviceOrientationAction: {fileID: 7970375526676320489, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
   m_DeselectOnBackgroundClick: 1
   m_PointerBehavior: 0
+--- !u!114 &1457932978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1457932973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5edfc440ab01abc4498c95d61efe95ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1489535794
 GameObject:
   m_ObjectHideFlags: 0

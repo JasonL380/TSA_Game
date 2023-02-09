@@ -11,6 +11,7 @@ public class mapLoader : MonoBehaviour
         mapselector = FindObjectOfType<MapSelector>();
         mapselector.loadMap();
         mapselector.dodestroy();
+        
     }
     // Start is called before the first frame update
     void Start()
