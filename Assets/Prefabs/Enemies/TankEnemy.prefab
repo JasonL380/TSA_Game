@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 566563747614171938}
   - component: {fileID: 566563747614171937}
   - component: {fileID: 6030519190503057533}
-  - component: {fileID: 3816100392821173082}
   - component: {fileID: 8403391876375128524}
   - component: {fileID: 3936394250081713675}
   - component: {fileID: 7928011630428112140}
+  - component: {fileID: 8470209867129470391}
   m_Layer: 6
   m_Name: TankEnemy
   m_TagString: Enemy
@@ -109,23 +109,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!58 &3816100392821173082
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 566563747614171943}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
+  m_Constraints: 4
 --- !u!114 &8403391876375128524
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -138,7 +122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fd67679029647d19bd3dc54648a5d41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 1
   waypoints:
   - {x: -16, y: -14.5}
   wallLayers:
@@ -183,3 +167,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67dc449958b8a4048b5ad56aab9c9e83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!70 &8470209867129470391
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 566563747614171943}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.016159534, y: -0.057711124}
+  m_Size: {x: 0.6401472, y: 1.0632105}
+  m_Direction: 0
