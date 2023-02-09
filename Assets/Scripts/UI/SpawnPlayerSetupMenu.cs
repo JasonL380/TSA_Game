@@ -21,6 +21,10 @@ public class SpawnPlayerSetupMenu : MonoBehaviour
             input.uiInputModule = module;
             menu.GetComponent<PlayerSetupMenuController>().setPlayerIndex(input.playerIndex);
         }
+        else
+        {
+            Debug.Log("MenuNotFound!");
+        }
     }
 
     public IEnumerator WillResetModule()

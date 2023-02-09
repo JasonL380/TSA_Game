@@ -8,6 +8,8 @@ TagManager:
   - Goal1
   - Goal2
   - Goal
+  - Menu1
+  - Menu2
   layers:
   - Default
   - TransparentFX

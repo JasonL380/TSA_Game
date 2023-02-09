@@ -50,7 +50,7 @@ public class PauseMenu : MonoBehaviour
     public void Resume()
     {
         PauseUI.SetActive(false);
-        Time.timeScale = 1f;
+        Time.timeScale = 1f;  
         GameisPaused = false;
         //PlayerController.timeRemaining = 0.2f;
         isPaused = false;

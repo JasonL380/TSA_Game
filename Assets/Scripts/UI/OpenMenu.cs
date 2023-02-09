@@ -2,14 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.InputSystem.UI;
 using UnityEngine.UI;
 
 public class OpenMenu : MonoBehaviour
 {
     public GameObject FirstSelected;
-    private void OnEnable()
+    public void enable()
     {
-        EventSystem.current.SetSelectedGameObject(null);
-        EventSystem.current.SetSelectedGameObject(FirstSelected);
+        MultiplayerEventSystem.current.SetSelectedGameObject(null);
+        MultiplayerEventSystem.current.SetSelectedGameObject(FirstSelected);
     }
 }
