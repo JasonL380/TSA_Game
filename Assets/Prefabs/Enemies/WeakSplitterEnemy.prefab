@@ -184,5 +184,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageAmount: 1
-  DestroyOnCollide: 1
+  DestroyOnCollide: 0
   damageDelay: 1

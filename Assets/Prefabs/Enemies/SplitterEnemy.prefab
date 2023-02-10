@@ -212,5 +212,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageAmount: 2
-  DestroyOnCollide: 1
+  DestroyOnCollide: 0
   damageDelay: 1
