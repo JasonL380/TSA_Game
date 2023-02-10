@@ -11,6 +11,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AoeBullet
       objectReference: {fileID: 0}
+    - target: {fileID: 6739186189290916018, guid: 62267d86b5b6976f4a638a7f1e0e4579, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6875315360435661007, guid: 62267d86b5b6976f4a638a7f1e0e4579, type: 3}
       propertyPath: m_RootOrder
       value: 0

@@ -133,13 +133,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6218950624554181667}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c3b2201be7cefdf468ce0bcd4c8a19ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damageAmount: 1
   DestroyOnCollide: 1
+  damageDelay: 0
 --- !u!114 &-3755162791534484194
 MonoBehaviour:
   m_ObjectHideFlags: 0

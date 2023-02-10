@@ -59,8 +59,17 @@ public class Turret : MonoBehaviour
                     
                     //fire at the target
                     GameObject bullet2 = GameObject.Instantiate(bullet, transform.position, angle);
-                    bullet2.GetComponent<BasicBullet>().turret = this;
-                    
+                    BasicBullet bulletScript = bullet2.GetComponent<BasicBullet>();
+
+                    if (bulletScript != null)
+                    {
+                        bulletScript.turret = gameObject;
+                    }
+                    else
+                    {
+                        print("bullet script is null");
+                    }
+
                     Rigidbody2D bulletRb2d = bullet2.GetComponent<Rigidbody2D>();
 
                     bulletRb2d.velocity = toTarget * bulletSpeed;
