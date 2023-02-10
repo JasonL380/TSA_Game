@@ -95,6 +95,10 @@ PrefabInstance:
       value: FastTurret
       objectReference: {fileID: 0}
     - target: {fileID: 7998886773047473652, guid: a650be1f4fc304e4ebd9cfafb073bcd1, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7998886773047473652, guid: a650be1f4fc304e4ebd9cfafb073bcd1, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -189,6 +193,10 @@ PrefabInstance:
       value: AoeTurret
       objectReference: {fileID: 0}
     - target: {fileID: 7998886773047473652, guid: e5863c0adc37d3c4f9cd3e2f85964f3a, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7998886773047473652, guid: e5863c0adc37d3c4f9cd3e2f85964f3a, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -277,6 +285,10 @@ PrefabInstance:
     - target: {fileID: 7998886773047473652, guid: 2b531e9285a004042bd016427047ede3, type: 3}
       propertyPath: m_Name
       value: SlowTurret
+      objectReference: {fileID: 0}
+    - target: {fileID: 7998886773047473652, guid: 2b531e9285a004042bd016427047ede3, type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7998886773047473652, guid: 2b531e9285a004042bd016427047ede3, type: 3}
       propertyPath: m_IsActive
@@ -371,6 +383,10 @@ PrefabInstance:
     - target: {fileID: 7998886773047473652, guid: 58ff2c4d1854d8e428d5006625a7e649, type: 3}
       propertyPath: m_Name
       value: BasicTurret
+      objectReference: {fileID: 0}
+    - target: {fileID: 7998886773047473652, guid: 58ff2c4d1854d8e428d5006625a7e649, type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7998886773047473652, guid: 58ff2c4d1854d8e428d5006625a7e649, type: 3}
       propertyPath: m_IsActive

@@ -76,16 +76,15 @@ public class TurretGrid : MonoBehaviour
     /// <returns>True if placement was successful, false if placement was unsuccessful</returns>
     public bool PlaceObjectAtPosition(GameObject prefab, Vector2 position, int layer, MoneyManager moneyManager)
     {
+        Vector2 gridPos = GetGridPosition(position);
+    
+        //check if there is already a turret at this position
+        if (_turretMap.ContainsKey(gridPos))
+        {
+            return false;
+        }
         if (moneyManager.SubMoney(prefab.GetComponent<Turret>().cost))
         {
-            Vector2 gridPos = GetGridPosition(position);
-        
-            //check if there is already a turret at this position
-            if (_turretMap.ContainsKey(gridPos))
-            {
-                return false;
-            }
-        
             //check if there are any obstacles in this area
             Collider2D obstacle = Physics2D.OverlapBox(position, gridSize, 0, obstacleLayerMask);
             if (obstacle != null)

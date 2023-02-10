@@ -45,6 +45,10 @@ public class Health : MonoBehaviour
             {
                 turret.moneyManager.AddMoney(money);
             }
+            else
+            {
+                print("turret is null");
+            }
             
             //run death things here
             DeathEffects deathEffects = GetComponent<DeathEffects>();

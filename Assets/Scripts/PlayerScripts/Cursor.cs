@@ -23,7 +23,7 @@ namespace Utils.PlayerScripts
         public int borderW;
         public int borderH;
         public MoneyManager moneyManager;
-        
+
         [Tooltip("The amount of time that it takes for this to move one tile")]
         public float speed = 0.125f;
         [Tooltip("The time that the movement animation takes as a fraction of the movement time")]
@@ -137,28 +137,32 @@ namespace Utils.PlayerScripts
         public void OnClick(InputAction.CallbackContext value)
         {
             //check if a purchasable object is selected
-            Collider2D collider = Physics2D.OverlapPoint(transform.position);
+            Collider2D[] collider = Physics2D.OverlapPointAll(transform.position);
 
-
-            if (collider != null)
+            if (collider.Length > 0)
             {
-                PurchasableObject purchasable;
-                purchasable = collider.gameObject.GetComponent<PurchasableObject>();
-                if (purchasable != null)
+                for (int i = 0; i < collider.Length; ++i)
                 {
-                    //do not place an object here, this is a purchasable object
-                    _spriteRenderer.material = previewMaterial;
-                    _spriteRenderer.sprite = purchasable.previewSprite;
-                    _selectManager.enablePurchase(purchasable.objectToPurchase, purchasable.cost);
-                    return;
+                    PurchasableObject purchasable;
+                    purchasable = collider[i].gameObject.GetComponent<PurchasableObject>();
+                    if (purchasable != null)
+                    {
+                        //do not place an object here, this is a purchasable object
+                        _spriteRenderer.material = previewMaterial;
+                        _spriteRenderer.sprite = purchasable.previewSprite;
+                        _selectManager.enablePurchase(purchasable.objectToPurchase, purchasable.cost);
+                        return;
+                    }
                 }
+
+                    
             }
 
-            print("click");
+            //print("click");
             if (_selectManager.purchaseState())
             {
-                print("placing tower");
-                _turretGrid.PlaceObjectAtPosition(_selectManager.purchaseObject(), transform.position, 0, moneyManager);
+              //  print("placing tower");
+                _turretGrid.PlaceObjectAtPosition(_selectManager.purchaseObject(), transform.position, 3, moneyManager);
             }
         }
 

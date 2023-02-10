@@ -242,7 +242,7 @@ public class Pathfinder : MonoBehaviour
                     {
                         if ((nextPoint >> 8) > 1)
                         {
-                            print("Pathfinder: cost is " + (nextPoint >> 8));
+                            //print("Pathfinder: cost is " + (nextPoint >> 8));
                         }
 
                         cost_so_far[next] = new_cost;
