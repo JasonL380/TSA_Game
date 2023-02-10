@@ -156,13 +156,11 @@ namespace Utils.PlayerScripts
                 }
 
                     
-            }
-
-            //print("click");
-            if (_selectManager.purchaseState())
+            } 
+            else if (_selectManager.purchaseState())
             {
               //  print("placing tower");
-                _turretGrid.PlaceObjectAtPosition(_selectManager.purchaseObject(), transform.position, 3, moneyManager);
+              _turretGrid.PlaceObjectAtPosition(_selectManager.purchaseObject(), transform.position, 3, moneyManager);
             }
         }
 
