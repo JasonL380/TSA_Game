@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3936394250081713675}
   - component: {fileID: 7928011630428112140}
   - component: {fileID: 8470209867129470391}
+  - component: {fileID: 2858488058943800580}
   m_Layer: 6
   m_Name: TankEnemy
   m_TagString: Enemy
@@ -183,3 +184,18 @@ CapsuleCollider2D:
   m_Offset: {x: -0.016159534, y: -0.057711124}
   m_Size: {x: 0.6401472, y: 1.0632105}
   m_Direction: 0
+--- !u!114 &2858488058943800580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 566563747614171943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3b2201be7cefdf468ce0bcd4c8a19ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 1
+  DestroyOnCollide: 1
+  damageDelay: 2

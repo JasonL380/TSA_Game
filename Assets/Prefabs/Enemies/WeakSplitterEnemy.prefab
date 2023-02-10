@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3816100392821173082}
   - component: {fileID: 8403391876375128524}
   - component: {fileID: 3936394250081713675}
+  - component: {fileID: -8487992008298053232}
   m_Layer: 6
   m_Name: WeakSplitterEnemy
   m_TagString: Enemy
@@ -170,3 +171,18 @@ MonoBehaviour:
   specSouls: 0
   money: 0
   manager: {fileID: 0}
+--- !u!114 &-8487992008298053232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 566563747614171943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3b2201be7cefdf468ce0bcd4c8a19ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 1
+  DestroyOnCollide: 1
+  damageDelay: 1

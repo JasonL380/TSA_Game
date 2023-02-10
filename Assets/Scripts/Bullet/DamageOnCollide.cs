@@ -6,20 +6,29 @@ public class DamageOnCollide : MonoBehaviour
 {
     public int damageAmount = 1;
     public bool DestroyOnCollide = true;
-
+    public float damageDelay = 0f;
+    private float damageTimer = 0f;
 
     // Start is called before the first frame update
     void Start()
     {
 
     }
+    private void Update()
+    {
+        if(damageTimer > 0f)
+        {
+            damageTimer -= Time.deltaTime;
+        }
+    }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Health health = collision.gameObject.GetComponent<Health>();
-        if(health != null)
+        if(health != null && damageTimer == 0f)
         {
             health.takeDamage(damageAmount, null);
+            damageTimer = damageDelay;
         }
         if (DestroyOnCollide)
         {
