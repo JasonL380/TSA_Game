@@ -7,9 +7,14 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography;
 using UnityEngine;
+using TMPro;
 
 public class WaveSystem : MonoBehaviour
+
 {
+
+    public TMP_Text mTMP;
+
     System.Random rand = new System.Random();
     
     public bool autoWaves = true;
@@ -77,12 +82,14 @@ public class WaveSystem : MonoBehaviour
     {
         spawnEnemy(BasicEnemy);
         spawnEnemy(BasicEnemy);
+        mTMP.text = "Wave Count: " + waveCount;
     }
     void WaveOneB()
     {
         spawnEnemy(BasicEnemy);
         spawnEnemy(BasicEnemy);
         ++waveCount;
+        mTMP.text = "Wave Count: " + waveCount;
     }
     void WaveTwoA()
     {
@@ -90,17 +97,20 @@ public class WaveSystem : MonoBehaviour
         spawnEnemy(BasicEnemy);
         spawnEnemy(BasicEnemy);
         spawnEnemy(BasicEnemy);
+        mTMP.text = "Wave Count: " + waveCount;
     }
     void WaveTwoB()
     {
         spawnEnemy(FastEnemy);
         spawnEnemy(FastEnemy);
+        mTMP.text = "Wave Count: " + waveCount;
     }
     void WaveTwoC()
     {
         spawnEnemy(BasicEnemy);
         spawnEnemy(BasicEnemy);
         ++waveCount;
+        mTMP.text = "Wave Count: " + waveCount;
     }
     void WaveThreeA()
     {
@@ -116,6 +126,7 @@ public class WaveSystem : MonoBehaviour
         spawnEnemy(TankEnemy);
         spawnEnemy(BasicEnemy);
         ++waveCount;
+        mTMP.text = "Wave Count: " + waveCount;
     }
     void WaveFourA()
     {
@@ -131,6 +142,7 @@ public class WaveSystem : MonoBehaviour
         spawnEnemy(DuplicateEnemy);
         spawnEnemy(FastEnemy);
         ++waveCount;
+        mTMP.text = "Wave Count: " + waveCount;
     }
     void WaveFiveA()
     {
@@ -146,6 +158,7 @@ public class WaveSystem : MonoBehaviour
         spawnEnemy(TankEnemy);
         spawnEnemy(FastEnemy);
         ++waveCount;
+        mTMP.text = "Wave Count: " + waveCount;
     }
 
     void RandomWave()
@@ -171,6 +184,7 @@ public class WaveSystem : MonoBehaviour
             }
         }
         ++waveCount;
+        mTMP.text = "Wave Count: " + waveCount;
     }
 
     void spawnEnemy(GameObject enemy)
