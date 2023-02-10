@@ -123,7 +123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fd67679029647d19bd3dc54648a5d41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 2
   waypoints:
   - {x: -16, y: -14.5}
   wallLayers:

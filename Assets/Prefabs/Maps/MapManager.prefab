@@ -1656,8 +1656,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: baaacf0d46c019c43a75e9cb4a6ec69d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 30
-  maxHealth: 30
+  health: 20
+  maxHealth: 20
   gameOverScene: gameOverScene
   mTMP: {fileID: 1375463703979591266}
 --- !u!1 &502371595202497731
@@ -2024,8 +2024,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: baaacf0d46c019c43a75e9cb4a6ec69d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 30
-  maxHealth: 30
+  health: 20
+  maxHealth: 20
   gameOverScene: gameOverScene
   mTMP: {fileID: 3588823433341365146}
 --- !u!1 &502371595590606656
