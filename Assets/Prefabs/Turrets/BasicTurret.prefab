@@ -130,7 +130,7 @@ MonoBehaviour:
   damageTaken: 0
   genSouls: 0
   specSouls: 0
-  money: 0
+  money: 10
   manager: {fileID: 0}
 --- !u!58 &6352175495386701500
 CircleCollider2D:
