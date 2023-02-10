@@ -110,7 +110,7 @@ MonoBehaviour:
   fireRate: 0.2
   range: 7
   moneyManager: {fileID: 0}
-  cost: 10
+  cost: 50
 --- !u!114 &-8938350965971638689
 MonoBehaviour:
   m_ObjectHideFlags: 0
