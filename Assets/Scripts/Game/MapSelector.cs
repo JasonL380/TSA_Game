@@ -20,7 +20,7 @@ public class MapSelector : MonoBehaviour
     public void loadMap()
     {
         Instantiate(map);
-        DontDestroyOnLoad(map);
+        //DontDestroyOnLoad(map);
     }
     public void dodestroy()
     {
