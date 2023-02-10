@@ -385,7 +385,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   money: 0
   mTMP: {fileID: 1907108500247525142}
-  infiniteMoney: 1
+  infiniteMoney: 0
 --- !u!114 &8139302447501433093
 MonoBehaviour:
   m_ObjectHideFlags: 0
