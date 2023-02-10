@@ -38,26 +38,26 @@ public class WaveSystem : MonoBehaviour
     {
         if (autoWaves)
         {
-            Invoke("WaveOneA", 0);
-            Invoke("WaveOneB", 3);
+            Invoke("WaveOneA", 10);
+            Invoke("WaveOneB", 13);
 
-            Invoke("WaveTwoA", 8);
-            Invoke("WaveTwoB", 11);
-            Invoke("WaveTwoC", 14);
+            Invoke("WaveTwoA", 18);
+            Invoke("WaveTwoB", 21);
+            Invoke("WaveTwoC", 24);
 
-            Invoke("WaveThreeA", 20);
-            Invoke("WaveThreeB", 23);
+            Invoke("WaveThreeA", 30);
+            Invoke("WaveThreeB", 33);
 
-            Invoke("WaveFourA", 30);
-            Invoke("WaveFourB", 34);
+            Invoke("WaveFourA", 40);
+            Invoke("WaveFourB", 44);
 
-            Invoke("WaveFiveA", 40);
-            Invoke("WaveFiveB", 44);
+            Invoke("WaveFiveA", 50);
+            Invoke("WaveFiveB", 54);
 
             for (int i = 0; i < howManyWaves - 5; i++)
             {
-                Invoke("RandomWave", 50 + (i * 6));
-                Invoke("RandomWave", 53 + (i * 6));
+                Invoke("RandomWave", 60 + (i * 8));
+                Invoke("RandomWave", 63 + (i * 8));
             }
 
         }
@@ -150,7 +150,7 @@ public class WaveSystem : MonoBehaviour
 
     void RandomWave()
     {
-        for (int i = 0; i < rand.Next(waveCount); i++)
+        for (int i = 0; i < rand.Next(waveCount) + 10; i++)
         {
             int enemyType = rand.Next(100);
             if (enemyType >= 0 && enemyType < 49) //50% chance to spawn basicenemy
