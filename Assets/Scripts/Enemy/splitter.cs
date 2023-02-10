@@ -18,8 +18,14 @@ public class splitter : MonoBehaviour
     {
         if(hpScript.currentHealth == 1)
         {
-            Instantiate(splitChild, transform.position, transform.rotation);
-            Instantiate(splitChild, transform.position, transform.rotation);
+            Vector2 target = GetComponent<Pathfinder>().waypoints[0];
+            GameObject newEnemy = Instantiate(splitChild, transform.position, transform.rotation);
+            Pathfinder pathfinder = newEnemy.GetComponent<Pathfinder>();
+            pathfinder.waypoints[0] = target;
+            
+            newEnemy = Instantiate(splitChild, transform.position, transform.rotation);
+            pathfinder = newEnemy.GetComponent<Pathfinder>();
+            pathfinder.waypoints[0] = target;
             hpScript.currentHealth = 0;
         }
     }
